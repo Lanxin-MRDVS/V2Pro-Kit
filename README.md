@@ -7,6 +7,19 @@ Powered by our decade-refined **Fusion-SLAM™** technology—a tightly-coupled 
 
 ---
 
+## Documentation & Resources
+
+| Resource | Link |
+|----------|------|
+| **HTTP Communication Protocol** | [View Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-HTTP-Communication-Protocol) |
+| **UDP Communication Protocol** | [View Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-UDP-Communication-Protocol) |
+| **ROS1 SDK Download** | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/Firmware/V2_ROS_SDK.zip) |
+| **ROS1 Interface Documentation** | [View Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-ROS1-Interface) |
+| **ROS2 SDK Download** | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/Firmware/lx_camera_ros2_ws.zip) |
+| **ROS2 Interface Documentation** | [View Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-ROS2-Interface) |
+| **Firmware Download** | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/Firmware/hontai_update_260303_V1.1.1.bin) |
+
+---
 ## Technical Specifications
 
 | Parameter | Specification |
@@ -21,15 +34,3 @@ Powered by our decade-refined **Fusion-SLAM™** technology—a tightly-coupled 
 | **Interfaces** | Gigabit Ethernet, CAN Bus (CANopen), Wi-Fi 2.4GHz, 4x Digital I/O, Audio |
 | **Environmental** | IP54, -20°C to +60°C operating, shock-resistant for forklift mounting |
 | **Dimensions** | 146.5 × 66.3 × 89.4 mm (excl. cables) |
-
----
-
-## Documentation & Resources
-
-| Resource | Link |
-|----------|------|
-| **HTTP Communication Protocol** | [https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-HTTP-Communication-Protocol](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-HTTP-Communication-Protocol) |
-| **UDP Communication Protocol** | [https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-UDP-Communication-Protocol](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-UDP-Communication-Protocol) |
-| **ROS1 Interface Documentation** | [https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-ROS1-Interface](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-ROS1-Interface) |
-| **ROS2 Interface Documentation** | [https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-ROS2-Interface](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-ROS2-Interface) |
-| **Firmware** | [hontai_update_260303_V1.1.1.bin](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases) |
