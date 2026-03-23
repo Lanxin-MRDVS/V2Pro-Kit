@@ -17,7 +17,7 @@ Powered by our decade-refined **Fusion-SLAM™** technology—a tightly-coupled 
 | **ROS1 Interface Documentation** | [View Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-ROS1-Interface) |
 | **ROS2 SDK Download** | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/Firmware/lx_camera_ros2_ws.zip) |
 | **ROS2 Interface Documentation** | [View Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-ROS2-Interface) |
-| **Firmware Download** | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/Firmware/hontai_update_260303_V1.1.1.bin) |
+| **Firmware Download** | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/Firmware/hontai_update_260318_V1.1.1.bin) |
 
 ---
 ## Technical Specifications
