@@ -36,9 +36,9 @@ For the broader spectrum of non-autonomous Material Handling Vehicles (MHVs) inc
 | -------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | **HTTP Communication Protocol**  | [View Documentation](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-HTTP-Communication-Protocol)                        |
 | **UDP Communication Protocol**   | [View Documentation](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-UDP-Communication-Protocol)                         |
-| **ROS1 SDK Download**            | [Download SDK](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/Firmware/V2_ROS_SDK.zip)                  |
+| **ROS1 SDK Download**            | [Download SDK](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2_ROS1.zip)                  |
 | **ROS1 Interface Documentation** | [View Documentation](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-ROS1-Interface)                                     |
-| **ROS2 SDK Download**            | [Download SDK](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/Firmware/lx_camera_ros2_ws.zip)           |
+| **ROS2 SDK Download**            | [Download SDK](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2_ROS2.zip)           |
 | **ROS2 Interface Documentation** | [View Documentation](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-ROS2-Interface)                                     |
-| **QR Code Tags**                 | [Download ZIP](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/Firmware/V2Pro_QRcode_tags.zip)           |
-| **Firmware Download**            | [Download Firmware](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/Firmware/hontai_update_260318_V1.1.1.bin) |
+| **QR Code Tags**                 | [Download ZIP](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2Pro_QRcode_tags.zip)           |
+| **Firmware Download**            | [Download Firmware](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2_1.2.0.zip) |
