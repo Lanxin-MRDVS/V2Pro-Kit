@@ -15,7 +15,6 @@ It serves as the complete positioning and navigation unit for transforming manua
 3)	The Precision Awareness Device for Manual MHVs
 For the broader spectrum of non-autonomous Material Handling Vehicles (MHVs) including reach trucks, pallet trucks, order pickers, tow tractors, and more, the V2 Pro provides high-precision real-time location data. This enables critical capabilities such as proximity safety alerts, accurate fleet tracking, and rich data feeds for digital twin systems, forming the intelligent sensory layer of the modern digital warehouse.
 
----
 ## Technical Specifications
 
 | Parameter                | Specification                                                                       |
