@@ -34,15 +34,15 @@ For the broader spectrum of non-autonomous Material Handling Vehicles (MHVs) inc
 
 The table below lists the download entry points for V2 Pro V1.2.0. For detailed update notes, package descriptions, version compatibility information, and upgrade instructions, see the [Release Notes](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/tag/V2-Pro-V1.2.0).
 
-| Resource                                       | Download                                                                                                                                                                                                 |
-| ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Frontend Package**                           | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/rob0525.zip)                                                                                                     |
+| Resource                                       | Download                                                                                                                                                 |
+| ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Frontend Package**                           | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/rob0525.zip)                                                   |
 | **Algorithm Firmware Package**                 | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/hontai_2.1.43-V2-Normal_971b8_260529A0529_200954_md5182a8.zip) |
-| **Hardware Patch**         | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2Pro-update-V1.1.2_260609.bin)                                                                             |
-| **V2 Pro Integrated Firmware Upgrade Package** | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2_firmware_update_260324_V1.1.2.bin)                                                   |
-| **ROS1 SDK**                                   | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2_ROS1.zip)                                                                                                     |
-| **ROS2 SDK**                                   | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2_ROS2.zip)                                                                                                     |
-| **Pre-defined Positioning QR Codes**           | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2Pro_QRcode_tags.zip)                                                                                 |
+| **Hardware Patch**                             | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2Pro-update-V1.1.2_260609.bin)                                |
+| **V2 Pro Integrated Firmware Upgrade Package** | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2_firmware_update_260324_V1.1.2.bin)                          |
+| **ROS1 SDK**                                   | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2_ROS1.zip)                                                   |
+| **ROS2 SDK**                                   | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2_ROS2.zip)                                                   |
+| **Pre-defined Positioning QR Codes**           | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2Pro_QRcode_tags.zip)                                         |
 
 ## Documentation
 
@@ -52,4 +52,5 @@ The table below lists the download entry points for V2 Pro V1.2.0. For detailed 
 | **UDP Communication Protocol**   | [View Documentation](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-UDP-Communication-Protocol)  |
 | **ROS1 Interface Documentation** | [View Documentation](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-ROS1-Interface)              |
 | **ROS2 Interface Documentation** | [View Documentation](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-ROS2-Interface)              |
+| **Relocalization QR Code Deployment** |[View Documentation](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/Relocalization-QR-Code-Deployment)|
 
