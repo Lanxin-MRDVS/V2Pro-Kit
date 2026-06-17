@@ -7,12 +7,15 @@ At its heart lies our Fusion SLAM™ technology - a tightly-coupled fusion algor
 
 ## Key Applications
 
-The V2 Pro is engineered for three core operational needs:
-1)	The Core Positioning Device for AGVs & AMRs
+The V2 Pro is engineered for three core operational needs: 
+
+**1)	The Core Positioning Device for AGVs & AMRs**\
 The V2 Pro provides the centimeter-accurate, infrastructure-free positioning essential for Autonomous Guided Vehicles (AGVs) and Autonomous Mobile Robots (AMRs) to execute core tasks- such as material transport, facility inspection, and industrial cleaning - with full reliability.
-2)	The Ideal Retrofit Kit for Manual-to-Autonomous Conversion
+
+**2)	The Ideal Retrofit Kit for Manual-to-Autonomous Conversion**\
 It serves as the complete positioning and navigation unit for transforming manual forklifts into autonomous AGVs. This enables rapid, cost-effective automation of existing assets.
-3)	The Precision Awareness Device for Manual MHVs
+
+**3)	The Precision Awareness Device for Manual MHVs**\
 For the broader spectrum of non-autonomous Material Handling Vehicles (MHVs) including reach trucks, pallet trucks, order pickers, tow tractors, and more, the V2 Pro provides high-precision real-time location data. This enables critical capabilities such as proximity safety alerts, accurate fleet tracking, and rich data feeds for digital twin systems, forming the intelligent sensory layer of the modern digital warehouse.
 
 ## Technical Specifications
