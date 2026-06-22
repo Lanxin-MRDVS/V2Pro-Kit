@@ -40,7 +40,8 @@ Modify Device IP Address (if needed)
 
 If the target device requires a different IP address, it can also be modified using the GUI tool (see screenshot below).
 
-![e-3-1.png](https://pub-7b25325ec91643989210e56dc1a181a4.r2.dev/v2pro_wp/e-3-1.png)
+<img alt="PixPin_2026-06-22_11-31-33" src="https://github.com/user-attachments/assets/c1b5d20e-d982-4ab3-8769-d7941124d292" />
+
 
 IP Configuration
 
@@ -52,7 +53,8 @@ Make sure the computer's network IP address configurated as instructed in 1.2 Ne
 
 Launch the installed ***LxCameraViewer.exe*** software, then follow the instructions shown in the images to upgrade the firmware;
 
-![e-4-1.jpeg](https://pub-7b25325ec91643989210e56dc1a181a4.r2.dev/v2pro_wp/e-4-1.jpeg)
+<img alt="PixPin_2026-06-22_11-55-14" src="https://github.com/user-attachments/assets/d4f8bd72-77b1-4ad3-ba15-bb1320125fcc" />
+
 
 ![e-4-2.jpeg](https://pub-7b25325ec91643989210e56dc1a181a4.r2.dev/v2pro_wp/e-4-2.jpeg)
 
