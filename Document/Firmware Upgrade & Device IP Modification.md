@@ -62,9 +62,24 @@ The upgrade process takes approximately one minute. Once complete, reopen the de
 
 ## 2. Mapping Algorithm Firmware Update (via Web Portal)
 
-The online update feature for mapping algorithm firmware is now supported via the Web Portal. Specific update instructions will be added later.
+The online update feature for mapping algorithm firmware is now supported via the Web Portal. 
 
-For any questions regarding algorithm updates, please contact our technical support team.
+### 2.1 Preparetion
+
+Download the latest Front-end update package and Algorithm update firmware at:
+
+https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases
+
+1. Front-end update package: [rob0525.zip](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/rob0525.zip)
+2. Algorithm update firmware: [hontai_2.1.43-V2-Normal_971b8_260529A0529_200954_md5182a8.zip](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/hontai_2.1.43-V2-Normal_971b8_260529A0529_200954_md5182a8.zip
+
+<img alt="Näyttökuva 2026-06-22 kello 18 12 44" src="https://github.com/user-attachments/assets/dc2f0ce2-e0f4-4780-9a82-307686c232ea" />
+
+### 2.2 Run the Web Platform and update the front-end and algorithm
+
+Connect the V2 Pro camera system with you PC, then lauch the system management platform via Web Portal at http://192.168.100.201:9998 .
+
+
 
 ---
 
