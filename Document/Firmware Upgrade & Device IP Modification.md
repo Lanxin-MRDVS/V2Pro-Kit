@@ -80,6 +80,9 @@ https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases
 Connect the V2 Pro camera system with you PC, then lauch the system management platform via Web Portal at http://192.168.100.201:9998 .
 
 
+After uploading the front-end update package, the front-end will be updated automatically.
+
+After uploading the Algorithm update firmware, the Algorithm firmware will be updated automatically. 
 
 ---
 
