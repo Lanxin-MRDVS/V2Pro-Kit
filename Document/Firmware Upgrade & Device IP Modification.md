@@ -26,13 +26,15 @@ The Windows version is recommended as it offers greater stability.
 
 The GUI tool is only required for firmware updates - it is not needed for normal system operation.
 
-Download the latest Firmware
+Download the latest Firmware update package at:
 
 https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases
 
-Firmware Name: hontai_update_xxxxxx_Vxxx.bin
+1. Firmware package name: hontai_update_xxxxxx_Vxxx.bin \
+(currently we are using [V2Pro-update-V1.1.2_260609.bin](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2Pro-update-V1.1.2_260609.bin))
 
-![e-2-1.png](https://pub-7b25325ec91643989210e56dc1a181a4.r2.dev/v2pro_wp/e-2-1.png)
+<img alt="Näyttökuva 2026-06-22 kello 17 04 02" src="https://github.com/user-attachments/assets/c1b53371-2362-494b-a24a-220bbb843256" />
+
 
 Modify Device IP Address (if needed)
 
