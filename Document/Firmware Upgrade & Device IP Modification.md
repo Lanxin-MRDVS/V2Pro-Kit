@@ -45,7 +45,7 @@ If the target device requires a different IP address, it can also be modified us
 
 IP Configuration
 
-Make sure the computer's network IP address configurated as instructed in 1.2 Network Connection and PC Configuration.
+Make sure the computer's network IP address is configured as instructed in 1.2 Network Connection and PC Configuration.
 
 ### 1.2 Run the GUI Tool and update the firmware
 
@@ -77,7 +77,7 @@ https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases
 
 ### 2.2 Run the Web Platform and update the front-end and algorithm
 
-Connect the V2 Pro camera system with you PC, then lauch the system management platform via Web Portal at http://192.168.100.201:9998 .
+Connect the V2 Pro camera system with your PC, then launch the system management platform via Web Portal at http://192.168.100.201:9998 .
 
 #### Step 1: Click [Web-Frontend] tab and then click [Single Vehicle Web Frontend Package Upload] button
 <img alt="PixPin_2026-06-22_12-33-13" src="https://github.com/user-attachments/assets/2adb8103-0674-4f77-8f84-7370ecc3b7b6" />
