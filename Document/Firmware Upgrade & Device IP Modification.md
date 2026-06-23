@@ -64,7 +64,7 @@ The upgrade process takes approximately one minute. Once complete, reopen the de
 
 The online update feature for mapping algorithm firmware is now supported via the Web Portal. 
 
-### 2.1 Preparetion
+### 2.1 Preparation
 
 Download the latest Front-end update package and Algorithm update firmware at:
 
