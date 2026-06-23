@@ -79,10 +79,34 @@ https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases
 
 Connect the V2 Pro camera system with you PC, then lauch the system management platform via Web Portal at http://192.168.100.201:9998 .
 
+#### Step 1: Click [Web-Frontend] tab and then click [Single Vehicle Web Frontend Package Upload] button
+<img alt="PixPin_2026-06-22_12-33-13" src="https://github.com/user-attachments/assets/2adb8103-0674-4f77-8f84-7370ecc3b7b6" />
+
+#### Step 2: Click [Select Single Vehicle Web Frontend Package] button and select the frontend update package mentioned above
+
+<img alt="PixPin_2026-06-22_12-33-45" src="https://github.com/user-attachments/assets/a1a6a3d7-4f4e-44c3-86b5-a2df0e8a72f5" />
+
+#### Step 3: Select the right package and then click [Upload] button
+
+<img alt="PixPin_2026-06-22_12-34-41" src="https://github.com/user-attachments/assets/54ca0316-c900-4c4a-b5b7-ed497497d361" />
+<img alt="PixPin_2026-06-22_12-35-11" src="https://github.com/user-attachments/assets/1b5ee3e7-f455-4a9c-b894-a0e9b300d015" />
 
 After uploading the front-end update package, the front-end will be updated automatically.
 
-After uploading the Algorithm update firmware, the Algorithm firmware will be updated automatically. 
+#### Step 4: Click [Firmware Update] button and then click [View Package (local)] button
+<img width="1901" height="926" alt="PixPin_2026-06-22_12-37-09" src="https://github.com/user-attachments/assets/83676cb4-e494-4fae-9b7f-27d78b07dda7" />
+
+#### Step 5: Click [Select File] button
+<img alt="PixPin_2026-06-22_12-37-34" src="https://github.com/user-attachments/assets/1089ce67-2e61-462c-8ae2-8572d5516b16" />
+
+#### Step 6: Select the right algorithm firmware update package and then click [Upload] button 
+<img  alt="PixPin_2026-06-22_12-38-02" src="https://github.com/user-attachments/assets/538f933b-f03a-4b6a-a33d-f04fe0c595d9" />
+
+<img  alt="PixPin_2026-06-22_12-38-35" src="https://github.com/user-attachments/assets/2e25685f-9d7e-475f-83dd-f9efce8c8f94" />
+
+
+
+After uploading the algorithm firmware update package, the Algorithm firmware will be updated automatically. 
 
 ---
 
