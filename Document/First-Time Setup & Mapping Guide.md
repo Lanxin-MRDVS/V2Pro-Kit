@@ -32,14 +32,10 @@ To complete the procedures in this guide, ensure you have the following items:
    - **Blue power indicator blinking slowly** → Device powered on normally
    - **No illumination** → Check wiring, and power specifications
 
-<br>
-    <img src="https://pub-7b25325ec91643989210e56dc1a181a4.r2.dev/v2pro_wp/c-1-1.png" 
-         alt="Power connection and status indicator" 
-         width="50%">
-<br>   
-<p>Figure 1: Power connection and status indicator</p>
-
-
+<p align="center">
+  
+<img length=50% width=50% src="https://pub-7b25325ec91643989210e56dc1a181a4.r2.dev/v2pro_wp/c-1-1.png" />
+<br><em>Figure 1: Power connection and status indicator</em></p>
 
 ### 1.2 Network Connection and PC Configuration
 
