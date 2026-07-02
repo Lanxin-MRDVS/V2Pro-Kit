@@ -71,23 +71,25 @@ To access the web portal, open your web browser and enter http://192.168.100.201
 
 ![Image placeholder: Web portal interface overview](https://pub-7b25325ec91643989210e56dc1a181a4.r2.dev/v2pro_wp/c-3-1.jpeg)
 
-**Menu Bar:**
+| Panel | UI Element / Feature | Description |
+| :--- | :--- | :--- |
+| **Menu Bar**<br>*(red box)* | Start Mapping | Launch mapping function |
+| | Relocate | Perform relocalization operation |
+| | Map Management | Map management interface |
+| | Parameter Config | Configure system parameters |
+| | Log Export | Export system logs |
+| | Extrinsic Calibration | Perform extrinsic calibration |
+| | Firmware Update | Update camera firmware |
+| | Choose the PROG | Select the running program |
+| | Restart the PROG | Restart the current program |
+| | Version Info | Display software version information |
+| **Central Panel**<br>*(blue box)* | 2D Contour Map | Displays the loaded 2D contour map |
+| | Positioning Indicator | Shows the real-time positioning indicator of the localization module |
+| | Infrared Video Feed | Displays the real-time infrared video feed from the ceiling |
+| **Status Panel**<br>*(yellow box)* | Vehicle Coordinates | Displays real-time vehicle position coordinates (X, Y) |
+| | Mouse Coordinates | Displays mouse coordinates on the map |
+| **Right Panel**<br>*(green box)* | Ceiling-forward Camera | Displays the ceiling-forward camera image |
 
-- Start Mapping: Launch mapping function
-- Relocate: Perform relocalization operation
-- Map Management: Map management interface
-- Other function entries
-
-**Central Panel:**
-
-- Displays loaded 2D contour map
-- Shows the real-time positioning indicator of the localization module
-- Displays the real-time infrared video feed from the ceiling
-
-**Status Panel:**
-
-- VEHICLE real-time position coordinates (X, Y)
-- Mouse coordinates on the map
 
 ## 3. Creating a Map
 
