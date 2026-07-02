@@ -8,7 +8,9 @@ This guide provides step-by-step instructions for the complete deployment and op
 ## Firmware Upgrade Preparation
 
 For optimal performance, ensure your product is running the latest firmware.  
-Please refer to Appendix E: Firmware Upgrade Procedures.
+Please firmware Upgrade procedures, please refer to:
+
+https://github.com/Lanxin-MRDVS/V2Pro-Kit/blob/main/Document/Firmware%20Upgrade%20%26%20Device%20IP%20Modification.md
 
 ## Equipment Preparation and Setup
 
