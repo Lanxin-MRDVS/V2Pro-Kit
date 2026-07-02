@@ -1,6 +1,5 @@
 # First-Time Setup & Mapping Guide
 
-(We are actively refining this guide and the mapping UI interface is being upgraded. Your feedback during setup is welcome to help us improve the final version.)
 
 ## Document Overview
 
