@@ -53,10 +53,15 @@ To complete the procedures in this guide, ensure you have the following items:
    - Subnet Mask: 255.255.255.0
    - Default Gateway: 192.168.100.1
 
-3. Modify Device IP Address (if needed)  
-    If the device IP address needs to be modified, this can be done using the GUI tool. For detailed steps, refer to Appendix E: Firmware Upgrade & Device IP Modification.
+<p align="center">
+<img length=50% width=50% src="https://pub-7b25325ec91643989210e56dc1a181a4.r2.dev/v2pro_wp/c-2-1.jpeg" />
+<br><em>Figure 2: Computer network configuration</em></p>
 
-![Image placeholder: PC network configuration](https://pub-7b25325ec91643989210e56dc1a181a4.r2.dev/v2pro_wp/c-2-1.jpeg)
+
+3. Modify Device IP Address (if needed)  
+    If the device IP address needs to be modified, this can be done using the GUI tool. For detailed steps, refer to:
+    https://github.com/Lanxin-MRDVS/V2Pro-Kit/blob/main/Document/Firmware%20Upgrade%20%26%20Device%20IP%20Modification.md
+
 
 ## 2. Web Portal Interface Overview
 
