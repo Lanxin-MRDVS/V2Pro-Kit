@@ -80,8 +80,8 @@ To access the web portal, open your web browser and enter http://192.168.100.201
 | | Log Export | Export system logs |
 | | Extrinsic Calibration | Perform extrinsic calibration |
 | | Firmware Update | Update camera firmware |
-| | Choose the PROG | Select the running program |
-| | Restart the PROG | Restart the current program |
+| | Choose the PROG | Select the running device |
+| | Restart the PROG | Restart the current device |
 | | Version Info | Display software version information |
 | **Central Panel**<br>*(blue box)* | 2D Contour Map | Displays the loaded 2D contour map |
 | | Positioning Indicator | Shows the real-time positioning indicator of the localization module |
@@ -93,7 +93,10 @@ To access the web portal, open your web browser and enter http://192.168.100.201
 
 ## 3. Creating a Map
 
-![Image placeholder: Creating a map](https://pub-7b25325ec91643989210e56dc1a181a4.r2.dev/v2pro_wp/c-4-1.jpeg)
+<p align="center">
+<img alt="Screenshot from 2026-07-02 18-46-30" src="https://github.com/user-attachments/assets/11f95a79-0507-4049-8942-6e2ec25ba8cc" />
+<br><em>Figure 3: Map creation </em></p>
+
 
 ### 3.1 Start Mapping
 
@@ -157,7 +160,9 @@ To complete the mapping process, click the "End Mapping" button in the menu bar 
 
 ## 4. Map Management
 
-![Image placeholder: Map management](https://pub-7b25325ec91643989210e56dc1a181a4.r2.dev/v2pro_wp/c-6-1.jpeg)
+<p align="center">
+<img alt="Screenshot from 2026-07-02 18-47-53" src="https://github.com/user-attachments/assets/d1fe1563-dd00-4dad-88fd-247c31e733e8" />
+<br><em>Figure 5: Map management </em></p>
 
 ### 4.1 Local Map
 
@@ -178,7 +183,10 @@ To complete the mapping process, click the "End Mapping" button in the menu bar 
 
 ## 5. Relocalization Operation
 
-![Image placeholder: Relocalization operation](https://pub-7b25325ec91643989210e56dc1a181a4.r2.dev/v2pro_wp/c-7-1.jpeg)
+<p align="center">
+<img alt="Screenshot from 2026-07-02 18-48-55" src="https://github.com/user-attachments/assets/42f48723-6556-42e4-8560-245609c19a3a" />
+<br><em>Figure 6: Relocalization </em></p>
+
 
 ### 5.1 Start Relocalization
 
