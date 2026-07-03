@@ -69,7 +69,12 @@ To access the web portal, open your web browser and enter http://192.168.100.201
 
 **Interface Function Description:**
 
-![Image placeholder: Web portal interface overview](https://pub-7b25325ec91643989210e56dc1a181a4.r2.dev/v2pro_wp/c-3-1.jpeg)
+<p align="center">
+<img src="https://github.com/user-attachments/assets/1424aa2c-e208-471b-be2e-92c76b509507" />
+<br><em>Figure 3: Interface Overview</em></p>
+
+
+
 
 | Panel | UI Element / Feature | Description |
 | :--- | :--- | :--- |
@@ -153,11 +158,22 @@ When entering the mapping interface, you will see:
    - High-speed driving or sharp turns
    - Omitting critical areas
 
-![Image placeholder: Mapping best practices](https://pub-7b25325ec91643989210e56dc1a181a4.r2.dev/v2pro_wp/c-5-1.jpeg)
 
 ### 3.5 End Mapping
 
-To complete the mapping process, click the "End Mapping" button in the menu bar after the VEHICLE has scanned the entire operational area. The system will then automatically process the data-processing time is proportional to the area size (large areas may take several minutes). Do not power off or operate the device during this period.
+To complete the mapping process, click the [End Mapping] button in the menu bar after the vehicle has scanned the entire operational area. The system will then automatically process the data; the processing time is proportional to the area size (large areas may take several minutes). Do not power off or operate the device during this period.
+
+<p align="center">
+<img alt="Screenshot from 2026-07-02 18-47-53" src="https://github.com/user-attachments/assets/16e5f316-e029-47fd-b506-ec6eb92e296c" />
+<br><em>Figure 4: End mapping </em></p>
+
+The mapping process indicator will be displayed at the top of the screen, showing the progress of map generation using camera data during the [Start Mapping] phase.
+
+
+<p align="center">
+<img alt="Screenshot from 2026-07-02 18-47-53" src="https://github.com/user-attachments/assets/05478c8c-4727-4a65-94a3-1245e7061f10 " />
+<br><em>Figure 5: Mapping indicators </em></p>
+
 
 ## 4. Map Management
 
