@@ -93,14 +93,15 @@ To access the web portal, open your web browser and enter http://192.168.100.201
 
 ## 3. Creating a Map
 
+
+### 3.1 Start Mapping
+
+Click the **[Start Mapping]** button in the red menu bar as shown in Figure 3, the system will enter mapping preparation state.
+
 <p align="center">
 <img alt="Screenshot from 2026-07-02 18-46-30" src="https://github.com/user-attachments/assets/11f95a79-0507-4049-8942-6e2ec25ba8cc" />
 <br><em>Figure 3: Map creation </em></p>
 
-
-### 3.1 Start Mapping
-
-Click the **"Start Mapping"** button in the red menu bar, the system will enter mapping preparation state.
 
 ### 3.2 Enter Map Name
 
