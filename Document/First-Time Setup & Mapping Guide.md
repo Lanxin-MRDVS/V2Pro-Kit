@@ -177,19 +177,19 @@ The mapping process indicator will be displayed at the top of the screen, showin
 
 ## 4. Map Management
 
-<p align="center">
-<img alt="Screenshot from 2026-07-02 18-47-53" src="https://github.com/user-attachments/assets/d1fe1563-dd00-4dad-88fd-247c31e733e8" />
-<br><em>Figure 5: Map management </em></p>
-
 ### 4.1 Local Map
 
 1. **Apply Map:**
 
     In the local map interface, click **"Apply"** to activate the selected map.
 
-2. Reboot Required:
+   <p align="center">
+<img alt="Screenshot from 2026-07-02 18-47-53" src="https://github.com/user-attachments/assets/d1fe1563-dd00-4dad-88fd-247c31e733e8" />
+<br><em>Figure 5: Map management </em></p>
 
-    **Critical Step:** After clicking "Apply", you must reboot the V2 Pro device for the new map to take effect. Reboot can be performed via power cycle or software reboot.
+3. Reboot Required:
+
+- **Critical Step:** After clicking "Apply", you must reboot the V2 Pro device for the new map to take effect. Reboot can be performed via power cycle or software reboot by cliking [Restart the PROG].
 
     Failure to reboot will result in: re-localization failure, positioning errors, and unstable behavior.
 
@@ -200,31 +200,33 @@ The mapping process indicator will be displayed at the top of the screen, showin
 
 ## 5. Relocalization Operation
 
-<p align="center">
-<img alt="Screenshot from 2026-07-02 18-48-55" src="https://github.com/user-attachments/assets/42f48723-6556-42e4-8560-245609c19a3a" />
-<br><em>Figure 6: Relocalization </em></p>
 
 
 ### 5.1 Start Relocalization
 
-Click the **"Relocate"** button in the menu bar, the system enters relocalization mode.
+Click the **"Relocate"** button in the menu bar, the system enters relocalization mode。
+
+<p align="center">
+<img alt="Screenshot from 2026-07-02 18-48-55" src="https://github.com/user-attachments/assets/42f48723-6556-42e4-8560-245609c19a3a" />
+<br><em>Figure 6: Relocalization </em></p>
 
 ### 5.2 Perform Relocalization
 
-1. Automatic Map Matching:
+1. Automatic Relocalization:
 
 Once started, the module automatically registers real-time LiDAR point clouds with map contours.
 
-2. Manual Position Setting:
+Note: This function only works if the position of the device remains as the same than before the power shot down. If the position changed during the power shot down, please conduct manual position setting 
 
-If automatic matching fails, drag on the map to specify an approximate position and orientation. The system uses this as the initial estimate for precise positioning.
+2. Manual Relocalization:
 
-3. Success Indicators:
+If the position of the device changed during power shut down, or automatic matching fails, drag on the map to specify an approximate position and orientation. The system uses this as the initial estimate for precise positioning.
 
-   - Positioning status returns to normal
-   - "Positioning timeout" error disappears
-   - VEHICLE icon displays correctly on the map
+3. Status Indicators:
 
+   - Positioning status returns to normal and vehicle icon displays correctly on the map if relocalization is successful
+   - If relocalization fails, a "Positioning timeout" error disappears
+   
 ### 5.3 Relocalization Tips
 
 - Choose Feature-Rich Areas: Higher success rate in areas with distinct features like racks, corners;
@@ -239,30 +241,46 @@ Access via **"Parameter Config"** in the menu bar
 
 ## 7. Advanced Configuration & Feature Deployment
 
-### Network Configuration
+### 7.1 Network Configuration
 
-![Image placeholder: Network configuration](https://pub-7b25325ec91643989210e56dc1a181a4.r2.dev/v2pro_wp/c-8-1.jpeg)
 
-1. **Wi-Fi Setup**  
+
+
+1. **Wi-Fi Setup:** By configuring the device's network settings, usually during the first-time setup, the device will be able to connect to the local Wi-Fi. After that, you can access the device control platform via our Web Portal and control the device remotely, if your PC is in the same subnet.
+
     Access: Click “Parameter Config” → “On-Site Config” → “Wi-Fi”
 
-    For Dynamic IP (DHCP):
+    Note: After configuration, click [save] and [Restart PROG] to restart the device system.
+
+
+    **For Dynamic IP (DHCP):**
 
    - Set wifi_name (SSID) and wifi_pwd (password).
    - Set ziwang (subnet mask) to 24.
 
-    For Static IP:
+
+   <p align="center">
+   <img alt="Screenshot from 2026-07-02 18-48-55" src="https://github.com/user-attachments/assets/04f5349b-c8c0-45d3-87f6-2ed58e8055f9 " />
+   <br><em>Figure 7: Wifi connection configuration </em></p>
+
+
+    **For Static IP:**
 
    - address: Enter the fixed IP address.
    - gateway: Enter the network gateway.
    - static: Must be set to “yes”.
 
-2. **Wired Ethernet Setup**
+
+   <p align="center">
+   <img alt="Screenshot from 2026-07-02 18-48-55" src="https://github.com/user-attachments/assets/69ebf422-93b7-4b9c-b3ff-f0d237276238 " />
+   <br><em>Figure 8: Wifi connection configuration </em></p>
+
+
+2. **Wired Ethernet Setup:** To access the Web Portal and control the V2 Pro via Ethernet, simply connect the device to your computer using an Ethernet cable. Next, change your computer's IP address so it is on the same subnet, and then open the Web Portal.
 
    - Default IP: 192.168.100.201
    - Computer IP must be in the same subnet (e.g., 192.168.100.10).
 
-![Image placeholder: Wired Ethernet setup](https://pub-7b25325ec91643989210e56dc1a181a4.r2.dev/v2pro_wp/c-9-1.jpeg)
 
 ### 7.2 Communication Protocol Configuration
 
@@ -272,6 +290,9 @@ Access: Click “Parameter Config” → “Robot Config” → “Driver”
 
 - portName: IP address of the system receiving pose data.
 - portCode: UDP port number for communication.
+
+![Image placeholder: Wired Ethernet setup](https://pub-7b25325ec91643989210e56dc1a181a4.r2.dev/v2pro_wp/c-9-1.jpeg)
+
 
 ### 7.3 Relocalization QR Code Deployment
 
