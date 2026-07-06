@@ -286,86 +286,29 @@ Access via **"Parameter Config"** in the menu bar
 
 #### UDP Output Configuration
 
+This function is used to establish a UDP connection between the V2 Pro and the data receiving device. The [portName] refers to the IP address of the receiving device, while [portCode] represents the UDP port number used to receive packets. The [initParam] and [odomType] parameters can be left as default. The UDP packet contains data such as the device's X and Y coordinates, speed, and heading.
+
+
 Access: Click “Parameter Config” → “Robot Config” → “Driver”
 
 - portName: IP address of the system receiving pose data.
 - portCode: UDP port number for communication.
 
-![Image placeholder: Wired Ethernet setup](https://pub-7b25325ec91643989210e56dc1a181a4.r2.dev/v2pro_wp/c-9-1.jpeg)
+<p align="center">
+   <img alt="Screenshot from 2026-07-02 18-48-55" src="https://github.com/user-attachments/assets/4f4a0a26-973a-43b2-b5d8-81427f49112a " />
+   <br><em>Figure 9: UDP connection configuration </em></p>
 
 
-### 7.3 Relocalization QR Code Deployment
 
-**Reference link:** https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/Relocalization-QR-Code-Deployment
+## 8 Relocalization QR Code Deployment
+
+For detailed relocalization QR Code deployment Instructions, please refer to: https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/Relocalization-QR-Code-Deployment
 
 **Note:** It is suggested to complete QR code deployment before mapping, ensuring tags are within the camera's FOV and meet size requirements. For the AprilTag system, tag family 36H11 is recommended.
 
-1. **QR code and Printing Requirements**
 
-    QR code file are provided in the archive V2Pro_QRcode_tags.zip.
 
-    **Download link:**
-
-    https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2Pro_QRcode_tags.zip
-
-    Adhere to the following printing specifications:
-
-   - Print the QR code on non-reflective white paper (e.g., matte adhesive paper) using a laser printer with **scaling disabled.**
-   - For long-term durability, apply a matte protective film (avoid glossy finishes) over the code, to prevent reflection issues.
-   - Note: The size refers to the actual QR code size, excluding any white margin.
-
-2. **ID-to-Size Correspondence**
-    
-    The system automatically determines physical tag dimensions and calculates pose based on the tag ID. IDs are strictly bound to specific dimensions. Printing must conform exactly to the following requirements:
-
-| ID Range | Physical Size (cm) |
-| --- | --- |
-| 000–099 | 30 |
-| 100–199 | 40 |
-| 200–299 | 50 |
-| 300–399 | 60 |
-| 400–499 | 70 |
-| 500–587 | 80 |
-
-**WARNING:** Use of non-standard tag sizes will cause localization algorithm errors and relocalization failures.
-    
-3. Deployment Methods  
-
-    QR code deployment is recommended to be completed before mapping operations.
-
-   - Method A: Horizontal on Ceiling (Recommended)
-
-        Ensure a clear, unobstructed view - a slight tilt is acceptable.
-
-    
-   - Method B: Vertical on Walls/Columns
-
-        Use when ceiling mounting is not feasible- a slight tilt is acceptable.
-
-![Image placeholder: Horizontal on ceiling](https://pub-7b25325ec91643989210e56dc1a181a4.r2.dev/v2pro_wp/c-10-1.png)
-
-![Image placeholder: Vertical on walls or columns](https://pub-7b25325ec91643989210e56dc1a181a4.r2.dev/v2pro_wp/c-11-1.png)
-
-4. Size-to-Height Reference Table
-
-| Relative Height(m) | QR Code size include margin (cm) | QR Code size pure black block (cm) |
-| --- | --- | --- |
-| < 3 | 30 | 24 |
-| 4 | 40 | 32 |
-| 5 | 50 | 40 |
-| 6 | 60 | 48 |
-| 7 | 70 | 56 |
-| > 8 | 80 | 64 |
-
-![Image placeholder: Size-to-height reference](https://pub-7b25325ec91643989210e56dc1a181a4.r2.dev/v2pro_wp/c-12-1.jpeg)
-
-**Note:** “Relative Height” is the vertical distance between the camera and the QR code. The attached QR code files include a white margin zone (should keep it). The actual code area (dark modules) equals 80% of the file dimensions. Scale accordingly when printing.
-
-5. Multi-Gate / Multi-Entrance Recognition
-
-    For multi-entrance scenarios, it is recommended to deploy distinct gate/entrance QR codes.
-
-## 8. Operational FAQs & Troubleshooting
+## 9. Operational FAQs & Troubleshooting
 
 **Q: We are testing the V2 Pro in a narrow aisle (about 2 m wide) with very few ceiling features. The vehicle is driven roughly in the center, but we notice that rotation is not smooth even at a slow angular speed. What could be the cause and how can we improve performance?**
 
