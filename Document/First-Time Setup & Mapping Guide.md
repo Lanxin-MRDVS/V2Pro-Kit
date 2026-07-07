@@ -315,7 +315,45 @@ For detailed relocalization QR Code deployment Instructions, please refer to: ht
 
 ## 8. Operational FAQs & Troubleshooting
 
-**Q: We are testing the V2 Pro in a narrow aisle (about 2 m wide) with very few ceiling features. The vehicle is driven roughly in the center, but we notice that rotation is not smooth even at a slow angular speed. What could be the cause and how can we improve performance?**
+### Q: What if the vehicle is moved during power-off (e.g., towed to a different location)? How does the system recover positioning in that case?
+
+**A:** If the vehicle is moved while powered down, the system no longer has a valid last known position. However, the preferred approach is to avoid losing position in the first place.
+
+Therefore, it is strongly recommended to provide a continuous power supply from the forklift. In this case, even if the vehicle is turned off (ignition off), the localization device remains powered, so the location is never lost. If a continuous power supply from the forklift is not available, consider integrating a battery bank to provide continuous power to the device.
+If continuous power is truly not feasible, the following re-localization solutions are available:
+
+Option 1: Visual QR-Code Re-localization
+This is the fastest and most reliable method for recovering position after power loss. AprilTag QR codes can be deployed on ceilings, walls, or columns. If the vehicle is moved while off (e.g., towed to a new bay), simply drive it to any pre-deployed QR code in the facility. The onboard camera will scan the code, and the system will re-establish its exact position within 2 seconds.
+Additionally, QR codes can be placed at the vehicle charging station or parking area. In this case, the system will automatically re-localize each time the device is powered on.
+
+Option 2: Manual Map-Based Re-localization
+Drive the vehicle to a position with distinct features on the map (e.g., rack corners, pillars, or fixed equipment). Then, drag and drop the displayed vehicle position onto this feature location (position accuracy within 50 cm is acceptable). Use the right mouse button to rotate the direction to the correct orientation (within 30 degrees is acceptable). Manually select the corresponding feature location on the map via the operation interface, and the system will restore its position.
+
+### Q: What are the environmental limitations regarding lighting, vibration, and occlusion? 
+
+**A:** For Lighting: The ceiling-facing IR camera, equipped with 8 built-in IR emitters, ensures stable operation in total darkness, normal indoor lighting, or complex conditions (including intense indoor illumination and large-area window glare);
+For Vibration & Occlusion: Industrial-grade mechanical design withstands typical forklift/AGV vibrations. For extreme vibration environments, mounting via shock-absorbing brackets is recommended.
+
+### Q: Does the system suffer from positioning drift over time or distance?
+
+**A:** The system is fundamentally immune to positioning drift. The Fusion-SLAM™ engine performs absolute localization by continuously matching real-time sensor data - including ceiling visual features and LiDAR scans - against a fixed, pre-built global map. Unlike systems that rely on wheel odometry or inertial measurements (which accumulate error), our solution calculates pose directly relative to the map's absolute coordinate frame. This architecture eliminates cumulative drift entirely, ensuring stable, centimeter-accurate positioning regardless of operating duration or travel distance.
+
+### Q: Will layout changes require re-mapping? 
+
+**A:** We suggest mapping before placing bulk storage (e.g., ground stacks) and goods in fast-changing storage areas - especially bulk storage zones. Our Fusion-SLAM™ RTLS solution primarily uses fixed environmental features (e.g., pillars, ceiling lights, pipes, or wall ribs) for localization. Once mapping is complete, subsequent changes to bulk storage goods (e.g., additions/removals) do not require re-mapping.
+
+### Q: Do I need to re-map if the vehicle model (especially with different height) is changed?
+
+**A:** It depends. Usually, re-mapping is not needed for most situations when operating in the same area, even if the mounting method of the V2 Pro device changes (e.g., different bracket, different position on the new vehicle).
+Once the mounting height is changed, the camera's Z parameter needs to be adjusted to the correct value, where the Z parameter = the height of the topmost part of the camera section of the V2 Pro above the floor.
+However, if the change in the V2 Pro's mounting height above the floor exceeds 20% of the V2 Pro's distance to the ceiling/roof, it is recommended to re-map the area.
+
+### Q: Is separate mapping required for different floors? 
+
+**A:** We recommend creating a dedicated map for each floor. While layouts may appear similar, differences in ceiling structures, pillar placements, and other fixed features exist. Given that floor-specific mapping ensures optimal positioning accuracy and the process is straightforward, we recommend it for each floor.
+Additionally, by placing distinct QR codes at floor transition points, vehicles can automatically load the correct map upon entry, enabling seamless multi-floor operation.
+
+### Q: We are testing the V2 Pro in a narrow aisle (about 2 m wide) with very few ceiling features. The vehicle is driven roughly in the center, but we notice that rotation is not smooth even at a slow angular speed. What could be the cause and how can we improve performance?
 
 **A:** For narrow aisles (less than 2 m wide) with sparse overhead features such as in office demonstration environments, we recommend using a special firmware version for optimal performance. Here’s why:
 
@@ -323,7 +361,15 @@ To reduce noise and prevent self-detection of the vehicle body, the standard V2 
 
 To address this, we offer a customized firmware version that reduces or disables the 1.5 m filtering range. This retains more wall data in confined spaces, thereby improving stability during rotations and cornering.
 
-**Q: What should I do if I cannot connect to the V2 Pro via WLAN?**
+### Q: Does the system require a network to function?
+**A:** Yes. To output real-time positioning data to the vehicle's controller or a fleet management system, a local network connection is required. The system supports multiple connection methods to suit different deployment environments:
+
+Ethernet (wired): The primary and recommended interface for maximum reliability and bandwidth.
+
+Wi-Fi (wireless): Integrated Wi-Fi support provides flexibility where cabling is impractical. The device includes a standard antenna port for external Wi-Fi antenna connectivity. For Wi-Fi configuration steps, refer to our GitHub documentation.
+5G integration may be considered in future releases, depending on the actual operational needs and the necessity of wide-area mobility or Wi-Fi-absent environments. One key factor is that 5G/LTE frequency bands and channel configurations vary significantly across different regions. 
+
+### Q: What should I do if I cannot connect to the V2 Pro via WLAN?
 
 **A:** This issue is typically caused by a network routing conflict, especially in environments with multiple subnets.
 
@@ -346,7 +392,7 @@ If your PC is on 192.168.2.X and you need to connect to a V2 Pro on 192.168.0.20
 - Either temporarily change your PC's IP to the same subnet (e.g., 192.168.0.X)
 - Or add a static route to route traffic to 192.168.0.X via the appropriate gateway
 
-**Q: How to reconfigure the date/time if the camera display shows an incorrect timestamp (e.g., from the previous month)?**
+### Q: How to reconfigure the date/time if the camera display shows an incorrect timestamp (e.g., from the previous month)?
 
 **A:** The HTTP API is available for time synchronization.
 
@@ -354,7 +400,7 @@ If your PC is on 192.168.2.X and you need to connect to a V2 Pro on 192.168.0.20
 
 For ROS, a clock synchronization program is currently under development and will be made available in a future release.
 
-**Q: Under the condition that the vehicle/device was stationary during power-off, the startup time still exceeds 35 seconds. What should I check?**
+### Q: Under the condition that the vehicle/device was stationary during power-off, the startup time still exceeds 35 seconds. What should I check? 
 
 **A:** Verify optimization settings:
 
@@ -371,7 +417,7 @@ For ROS, a clock synchronization program is currently under development and will
 
 **Note:** This issue will be fixed in the production release.
 
-**Q: Can we use LTE during the V2 PRO testing period?**
+### Q: Can we use LTE during the V2 PRO testing period?
 
 **A:** Regarding LTE network support: Due to the complex and costly certification requirements, the V2 Pro is confirmed not to include an internal LTE module for now.
 
