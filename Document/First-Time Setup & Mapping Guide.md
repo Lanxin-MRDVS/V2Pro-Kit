@@ -239,9 +239,9 @@ If the position of the device changed during power shut down, or automatic match
    
 ### 5.3 Relocalization Tips
 
-- Choose Feature-Rich Areas: Higher success rate in areas with distinct features like racks, corners;
-- Avoid Open Areas: Relocalization is difficult in feature-sparse, open environments;
-- Multiple Attempts: If unsuccessful, try relocalization at different positions;
+- Choose Feature-Rich Areas: Higher success rate in areas with distinct features like racks, corners.
+- Avoid Open Areas: Relocalization is difficult in feature-sparse, open environments.
+- Multiple Attempts: If unsuccessful, try relocalization at different positions.
 
 ## 6. Parameter Configuration
 
