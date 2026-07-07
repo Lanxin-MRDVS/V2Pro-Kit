@@ -17,7 +17,7 @@ https://github.com/Lanxin-MRDVS/V2Pro-Kit/blob/main/Document/Firmware%20Upgrade%
 To complete the procedures in this guide, ensure you have the following items:
 
 1. **V2 Pro Device:** Pre-installed on the vehicle roof.
-2. **Power Supply for V2 Pro:** Direct to vehicle 24V DC or external portable supply.
+2. **Power Supply for the V2 Pro:** Direct to vehicle 24V DC or external portable supply.
 3. **Computer:** A laptop with an Ethernet port and a web browser (e.g., Chrome, Edge, Firefox). No specific operating system is required. This computer is used to establish a temporary direct Ethernet connection with the V2 Pro for initial setup and mapping via the web interface. After setup, the V2 Pro operates continuously when integrated with the vehicle or fleet management system.
 4. **Ethernet Cable:** for temporary connection between the V2 Pro device and the computer.
 
@@ -27,9 +27,9 @@ To complete the procedures in this guide, ensure you have the following items:
 
 1. Connect the provided power supply to the V2 Pro device, following the specific wiring identification detailed in the Hardware Datasheet of Appendix A.
 
-2. Observe the device status indicator
+2. Observe the device status indicator:
 
-   - **Blue power indicator blinking slowly** → Device powered on normally
+   - **Blue power indicator flashes slowly** → Device powered on normally
    - **No illumination** → Check wiring, and power specifications
 
 <p align="center">
@@ -45,7 +45,7 @@ To complete the procedures in this guide, ensure you have the following items:
 
 2. Computer Network Configuration:
 
-    **Note:** The V2 Pro's default IP is 192.168.100.201. Ensure your computer's firewall is temporarily disabled.
+    **Note:** The V2 Pro's default IP is 192.168.100.201. Ensure that your computer's firewall is temporarily disabled.
 
     **Set a Static IP on Your Computer:**
 
@@ -65,7 +65,7 @@ To complete the procedures in this guide, ensure you have the following items:
 
 ## 2. Web Portal Interface Overview
 
-To access the web portal, open your web browser and enter http://192.168.100.201:9998.
+To access the Web Portal, open your web browser and enter http://192.168.100.201:9998.
 
 **Interface Function Description:**
 
@@ -108,7 +108,7 @@ Click the **[Start Mapping]** button in the red menu bar as shown in Figure 3, t
 <br><em>Figure 3: Map creation </em></p>
 
 
-### 3.2 Enter Map Name
+### 3.2 Enter a Map Name
 
 **Naming Rules:**
 
@@ -118,17 +118,17 @@ Click the **[Start Mapping]** button in the red menu bar as shown in Figure 3, t
 
 ### 3.3 Mapping Interface
 
-When entering the mapping interface, you will see:
+Once you enter the mapping interface, you will see:
 
 - Real-time laser contour display
-- Mapping progress indicator
+- A mapping progress indicator
 
 ### 3.4 Mapping Best Practices
 
 1. **Pre-planning:**
 
    - Plan a driving path covering the entire operational area before starting
-   - Ensure the path covers all areas where the VEHICLE will actually operate
+   - Ensure the path covers all areas where the vehicle will actually operate
    
    **Note:** For warehouses larger than 5,000 m², we strongly recommend first driving along the perimeter of the facility, then systematically covering the internal aisles in sequence.
 
@@ -148,7 +148,7 @@ When entering the mapping interface, you will see:
 3. **Coverage Strategy:**
 
    - Overlap Requirement: Maintain approximately **1/3 image overlap area between parallel paths**
-   - Spacing Requirement: Maintain approximately **2-meter distance** between parallel paths
+   - Spacing Requirement: Maintain approximately a **2-meter distance** between parallel paths
    - Complete Coverage: Ensure all operational areas are scanned
 
 4. **Behaviors to Avoid:**
@@ -161,7 +161,7 @@ When entering the mapping interface, you will see:
 
 ### 3.5 End Mapping
 
-To complete the mapping process, click the [End Mapping] button in the menu bar after the vehicle has scanned the entire operational area. The system will then automatically process the data; the processing time is proportional to the area size (large areas may take several minutes). Do not power off or operate the device during this period.
+To complete the mapping process, Click the [End Mapping] button after the vehicle has scanned the entire operational area. The system will then automatically process the data; the processing time is proportional to the size of the mapped area (large areas may take several minutes). Do not power off or operate the device during this period.
 
 <p align="center">
 <img alt="Screenshot from 2026-07-02 18-47-53" src="https://github.com/user-attachments/assets/16e5f316-e029-47fd-b506-ec6eb92e296c" />
@@ -195,8 +195,8 @@ The mapping process indicator will be displayed at the top of the screen, showin
 
 3. **Other Operations:**
 
-   - Export: Backup currently effective map
-   - Delete: Remove map files from host
+   - Export: Export the currently active map for backup.
+   - Delete: Remove map files from the device.
 
 ## 5. Relocalization Operation
 
@@ -220,11 +220,11 @@ Note: This function only works if the position of the device remains the same as
 
 2. Manual Relocalization:
 
-If the position of the device changed during power shut down, or automatic matching fails, drag on the map to specify an approximate position and orientation. The system uses this as the initial estimate for precise positioning.
+If the position of the device changed while the system was powered off, or automatic matching fails, drag on the map to specify an approximate position and orientation. The system uses this as the initial estimate for precise positioning.
 
 3. Status Indicators:
 
-   - Positioning status returns to normal and vehicle icon displays correctly on the map if relocalization is successful, as shown in Figure 8.
+   - The positioning status returns to normal, and the vehicle icon is displayed correctly on the map, as shown in Figure 8.
    - If relocalization fails, a "Positioning timeout" error appears, as shown in Figure 7. 
 
 <p align="center">
