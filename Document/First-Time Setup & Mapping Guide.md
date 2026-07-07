@@ -8,7 +8,7 @@ This guide provides step-by-step instructions for the complete deployment and op
 ## Firmware Upgrade Preparation
 
 For optimal performance, ensure your product is running the latest firmware.  
-Please firmware Upgrade procedures, please refer to:
+For firmware upgrade procedures, please refer to:
 
 https://github.com/Lanxin-MRDVS/V2Pro-Kit/blob/main/Document/Firmware%20Upgrade%20%26%20Device%20IP%20Modification.md
 
@@ -189,7 +189,7 @@ The mapping process indicator will be displayed at the top of the screen, showin
 
 3. Reboot Required:
 
-- **Critical Step:** After clicking "Apply", you must reboot the V2 Pro device for the new map to take effect. Reboot can be performed via power cycle or software reboot by cliking [Restart the PROG].
+- **Critical Step:** After clicking "Apply", you must reboot the V2 Pro device for the new map to take effect. Reboot can be performed via power cycle or software reboot by clicking [Restart the PROG].
 
     Failure to reboot will result in: re-localization failure, positioning errors, and unstable behavior.
 
@@ -204,7 +204,7 @@ The mapping process indicator will be displayed at the top of the screen, showin
 
 ### 5.1 Start Relocalization
 
-Click the **"Relocate"** button in the menu bar, the system enters relocalization mode。
+Click the **"Relocate"** button in the menu bar, the system enters relocalization mode.
 
 <p align="center">
 <img alt="Screenshot from 2026-07-02 18-48-55" src="https://github.com/user-attachments/assets/42f48723-6556-42e4-8560-245609c19a3a" />
@@ -216,7 +216,7 @@ Click the **"Relocate"** button in the menu bar, the system enters relocalizatio
 
 Once started, the module automatically registers real-time LiDAR point clouds with map contours.
 
-Note: This function only works if the position of the device remains as the same than before the power shot down. If the position changed during the power shot down, please conduct manual position setting 
+Note: This function only works if the position of the device remains the same as before the power was shut down.
 
 2. Manual Relocalization:
 
@@ -225,7 +225,7 @@ If the position of the device changed during power shut down, or automatic match
 3. Status Indicators:
 
    - Positioning status returns to normal and vehicle icon displays correctly on the map if relocalization is successful, as shown in Figure 8.
-   - If relocalization fails, a "Positioning timeout" error disappears, as shown in Figure 7. 
+   - If relocalization fails, a "Positioning timeout" error appears, as shown in Figure 7. 
 
 <p align="center">
 <img alt="Screenshot from 2026-07-02 18-48-55" src="https://github.com/user-attachments/assets/8c6a4ada-b45a-4dfc-9bfe-5112dd03424e " />
