@@ -1,11 +1,12 @@
 # MRDVS V2 Pro - Infrastructure-Free Fusion-SLAM™ Localization Module
 
-## Overview
+## 1. Overview
 
-The MRDVS V2 Pro is the all-in-one embedded localization device engineered as the core positioning source for the modern digital warehouse: AGVs, AMRs, and the full spectrum of Material Handling Vehicles (MHVs) - from forklifts and reach trucks to pallet trucks and tow tractors. Its compact, integrated design unifies a 2D SLAM LiDAR, a ceiling-forward vision sensor, and an IMU into a single, factory-calibrated unit.
-At its heart lies our Fusion SLAM™ technology - a tightly-coupled fusion algorithm and a deep-learning engine honed through nearly ten years of real-world data accumulation and corner-case refinement. Forged by this experience, the system continuously evaluates and weights multi-sensor data in real time, adapting to environmental conditions to ensure reliable, uninterrupted operation. Through this intelligent, adaptive fusion of LiDAR point clouds, visual features, and IMU data, it consistently delivers stable ±3 cm accuracy at 10 Hz - all processed onboard.
+The MRDVS V2 Pro is an all-in-one embedded localization device engineered to serve as the core positioning source for the modern digital warehouse, supporting AGVs, AMRs, and the full spectrum of Material Handling Vehicles (MHVs)—from forklifts and reach trucks to pallet trucks and tow tractors. Its compact, integrated design combines a 2D SLAM LiDAR, a ceiling-forward vision sensor, and an IMU into a single, factory-calibrated unit.
 
-## Key Applications
+At its core is our Fusion SLAM™ technology—a tightly coupled sensor fusion algorithm and deep-learning engine refined through nearly ten years of real-world data collection and corner-case optimization. Built on this experience, the system continuously evaluates and weights multi-sensor data in real time, adapting to changing environmental conditions to ensure reliable, uninterrupted operation. Through the intelligent fusion of LiDAR point clouds, visual features, and IMU data, it consistently delivers stable ±3 cm localization accuracy at 10 Hz, with all processing performed onboard.
+
+## 2. Key Applications
 
 The V2 Pro is engineered for three core operational needs: 
 
@@ -18,7 +19,7 @@ It serves as the complete positioning and navigation unit for transforming manua
 **3)	The Precision Awareness Device for Manual MHVs**\
 For the broader spectrum of non-autonomous Material Handling Vehicles (MHVs) including reach trucks, pallet trucks, order pickers, tow tractors, and more, the V2 Pro provides high-precision real-time location data. This enables critical capabilities such as proximity safety alerts, accurate fleet tracking, and rich data feeds for digital twin systems, forming the intelligent sensory layer of the modern digital warehouse.
 
-## Technical Specifications
+## 3. Technical Specifications
 
 | Parameter                | Specification                                                                       |
 | ------------------------ | ----------------------------------------------------------------------------------- |
@@ -33,7 +34,7 @@ For the broader spectrum of non-autonomous Material Handling Vehicles (MHVs) inc
 | **Dimensions**           | 146.5 × 66.3 × 89.4 mm (excl. cables)                                               |
 
 ---
-## Resources
+## 4. Resources
 
 The table below lists the download entry points for V2 Pro V1.2.0. For detailed update notes, package descriptions, version compatibility information, and upgrade instructions, see the [Release Notes](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/tag/V2-Pro-V1.2.0).
 
@@ -47,7 +48,30 @@ The table below lists the download entry points for V2 Pro V1.2.0. For detailed 
 | **ROS2 SDK**                                   | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2_ROS2.zip)                                                   |
 | **Pre-defined Positioning QR Codes**           | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2Pro_QRcode_tags.zip)                                         |
 
-## Documentation
+
+## 5. System highlights
+
+**1) Near-Zero Infrastructure Deployment**
+The system operates immediately out of the box with minimal configuration, requiring no pre-installed infrastructure such as UWB anchors, AprilTags, beacons, or reflectors. This delivers plug-and-play functionality, reducing deployment complexity, time, and cost.
+Seamless Zone Transition & Rapid Re-localization
+With its ceiling-forward camera, the system can instantly re-localize by scanning a QR code when transitioning between mapped areas - such as moving from outdoor yards into indoor warehouses or recovering position after movement. This ensures continuous, accurate positioning without manual intervention.
+
+**2) Field-Proven Technology, Scaled from AMRs to Your Fleet**
+Fusion-SLAM™ is field-hardened through large-scale autonomous deployments. Refined across over a hundred real-world sites, it powers critical material handling and industrial operations in diverse environments. Now, this same proven core is engineered to scale beyond dedicated AMRs.
+
+**3) Innovative & Reliable System Architecture**
+As a fully integrated embedded system designed to overcome the challenges of varied industrial environments, this device employs a tightly-coupled LiDAR-Visual-Inertial SLAM algorithm and a deep learning-enhanced vision engine. It harmonizes data from its integrated 2D LiDAR, vision sensor, and IMU within a single compact unit, delivering reliable ±3 cm accuracy whether operating in narrow aisles, dynamic storage layouts, open areas, or high-bay racking systems.
+
+**4) Built for scale, not just precision**
+The system follows a "map once, deploy everywhere" principle: only one unit is required to generate a master map, which can be distributed to all other vehicles. You don't need to map everything at once - skip areas under construction, blocked by materials, or not yet ready. Later, simply extend the existing map by adding new zones (e.g., a new workshop). The system scales flexibly as your facility evolves.
+
+**5) Open Architecture & Intelligent Integration**
+Designed for flexibility, the solution offers a browser-based web portal for intuitive setup, real-time monitoring, and remote configuration - no additional software required. 
+For seamless system-level integration, the device supports industry-standard interfaces including CAN (CANopen), Gigabit Ethernet, and provides ROS/ROS 2 packages, UDP communication, and HTTP APIs (supporting POST/GET methods), enabling direct and continuous feeding of precise vehicle location data into higher-level Fleet Management Systems (FMS) or Warehouse Management Systems (WMS).
+
+
+
+## 6. Documentation
 
 | Document                         | Link                                                                                                    |
 | -------------------------------- | ------------------------------------------------------------------------------------------------------- |
