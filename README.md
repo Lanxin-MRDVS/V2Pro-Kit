@@ -4,20 +4,20 @@
 
 The MRDVS V2 Pro is an all-in-one embedded localization device engineered to serve as the core positioning source for the modern digital warehouse, supporting AGVs, AMRs, and the full spectrum of Material Handling Vehicles (MHVs)—from forklifts and reach trucks to pallet trucks and tow tractors. Its compact, integrated design combines a 2D SLAM LiDAR, a ceiling-forward vision sensor, and an IMU into a single, factory-calibrated unit.
 
-At its core is our Fusion SLAM™ technology—a tightly coupled sensor fusion algorithm and deep-learning engine refined through nearly ten years of real-world data collection and corner-case optimization. Built on this experience, the system continuously evaluates and weights multi-sensor data in real time, adapting to changing environmental conditions to ensure reliable, uninterrupted operation. Through the intelligent fusion of LiDAR point clouds, visual features, and IMU data, it consistently delivers stable ±3 cm localization accuracy at 10 Hz, with all processing performed onboard.
+At its core is our Fusion SLAM™ technology—a tightly coupled sensor fusion algorithm and deep-learning-based engine refined through nearly ten years of real-world data collection and corner-case optimization. Built on this experience, the system continuously evaluates and weights multi-sensor data in real time, adapting to changing environmental conditions to ensure reliable, uninterrupted operation. Through the intelligent fusion of LiDAR point clouds, visual features, and IMU data, it consistently delivers stable ±3 cm localization accuracy at 10 Hz, with all processing performed onboard.
 
 ## 2. Key Applications
 
-The V2 Pro is engineered for three core operational needs: 
+The V2 Pro is engineered for three core application areas: 
 
 **1)	The Core Positioning Device for AGVs & AMRs**\
-The V2 Pro provides the centimeter-accurate, infrastructure-free positioning essential for Autonomous Guided Vehicles (AGVs) and Autonomous Mobile Robots (AMRs) to execute core tasks- such as material transport, facility inspection, and industrial cleaning - with full reliability.
+The V2 Pro provides the centimeter-accurate, infrastructure-free positioning essential for Autonomous Guided Vehicles (AGVs) and Autonomous Mobile Robots (AMRs) to execute core tasks-such as material transport, facility inspection, and industrial cleaning-with full reliability.
 
-**2)	The Ideal Retrofit Kit for Manual-to-Autonomous Conversion**\
+**2)	The Ideal Retrofit Kit for Manual-to-Autonomy Conversion**\
 It serves as the complete positioning and navigation unit for transforming manual forklifts into autonomous AGVs. This enables rapid, cost-effective automation of existing assets.
 
 **3)	The Precision Awareness Device for Manual MHVs**\
-For the broader spectrum of non-autonomous Material Handling Vehicles (MHVs) including reach trucks, pallet trucks, order pickers, tow tractors, and more, the V2 Pro provides high-precision real-time location data. This enables critical capabilities such as proximity safety alerts, accurate fleet tracking, and rich data feeds for digital twin systems, forming the intelligent sensory layer of the modern digital warehouse.
+For the broader spectrum of non-autonomous material handling vehicles (MHVs) including reach trucks, pallet trucks, order pickers, tow tractors, and more, the V2 Pro provides high-precision real-time location data. This enables critical capabilities such as proximity safety alerts, accurate fleet tracking, and rich data feeds for digital twin systems, forming the intelligent sensory layer of the modern digital warehouse.
 
 ## 3. Technical Specifications
 
@@ -49,11 +49,11 @@ The table below lists the download entry points for V2 Pro V1.2.0. For detailed 
 | **Pre-defined Positioning QR Codes**           | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2Pro_QRcode_tags.zip)                                         |
 
 
-## 5. System highlights
+## 5. System Highlights
 
 **1) Near-Zero Infrastructure Deployment**
 The system operates immediately out of the box with minimal configuration, requiring no pre-installed infrastructure such as UWB anchors, AprilTags, beacons, or reflectors. This delivers plug-and-play functionality, reducing deployment complexity, time, and cost.
-Seamless Zone Transition & Rapid Re-localization
+Seamless Zone Transition & Rapid Relocalization
 With its ceiling-forward camera, the system can instantly re-localize by scanning a QR code when transitioning between mapped areas - such as moving from outdoor yards into indoor warehouses or recovering position after movement. This ensures continuous, accurate positioning without manual intervention.
 
 **2) Field-Proven Technology, Scaled from AMRs to Your Fleet**
