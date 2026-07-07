@@ -1,4 +1,4 @@
-# First-Time Setup & Mapping Guide
+# V2 Pro First-Time Setup & Mapping Guide
 
 
 ## Document Overview
@@ -181,19 +181,19 @@ The mapping process indicator will be displayed at the top of the screen, showin
 
 1. **Apply Map:**
 
-    In the local map interface, click **"Apply"** to activate the selected map.
+    In the local map interface, click **[Apply]** to activate the selected map.
 
    <p align="center">
 <img alt="Screenshot from 2026-07-02 18-47-53" src="https://github.com/user-attachments/assets/d1fe1563-dd00-4dad-88fd-247c31e733e8" />
 <br><em>Figure 5: Map management </em></p>
 
-3. Reboot Required:
+2. **Reboot Required:**
 
 - **Critical Step:** After clicking "Apply", you must reboot the V2 Pro device for the new map to take effect. Reboot can be performed via power cycle or software reboot by clicking [Restart the PROG].
 
     Failure to reboot will result in: re-localization failure, positioning errors, and unstable behavior.
 
-3. Other Operations:
+3. **Other Operations:**
 
    - Export: Backup currently effective map
    - Delete: Remove map files from host
@@ -204,7 +204,7 @@ The mapping process indicator will be displayed at the top of the screen, showin
 
 ### 5.1 Start Relocalization
 
-Click the **"Relocate"** button in the menu bar, the system enters relocalization mode.
+Click the **[Relocate]** button in the menu bar, the system enters relocalization mode.
 
 <p align="center">
 <img alt="Screenshot from 2026-07-02 18-48-55" src="https://github.com/user-attachments/assets/42f48723-6556-42e4-8560-245609c19a3a" />
@@ -243,15 +243,10 @@ If the position of the device changed during power shut down, or automatic match
 - Avoid Open Areas: Relocalization is difficult in feature-sparse, open environments.
 - Multiple Attempts: If unsuccessful, try relocalization at different positions.
 
-## 6. Parameter Configuration
 
-### 6.1 Configuration Interface Overview
+## 6. Advanced Configuration & Feature Deployment
 
-Access via **"Parameter Config"** in the menu bar
-
-## 7. Advanced Configuration & Feature Deployment
-
-### 7.1 Network Configuration
+### 6.1 Network Configuration
 
 
 
@@ -265,25 +260,25 @@ Access via **"Parameter Config"** in the menu bar
 
     **For Dynamic IP (DHCP):**
 
-   - Set wifi_name (SSID) and wifi_pwd (password).
-   - Set ziwang (subnet mask) to 24.
+   - Set [WIFI_Name] and [WIFI_Password].
+   - Set [Subnet Mask] to 24.
 
 
    <p align="center">
    <img alt="Screenshot from 2026-07-02 18-48-55" src="https://github.com/user-attachments/assets/04f5349b-c8c0-45d3-87f6-2ed58e8055f9 " />
-   <br><em>Figure 7: Wifi connection configuration </em></p>
+   <br><em>Figure 7: Dynamic IP configuration </em></p>
 
 
     **For Static IP:**
 
-   - address: Enter the fixed IP address.
-   - gateway: Enter the network gateway.
-   - static: Must be set to “yes”.
+   - [IP address]: Enter the fixed IP address.
+   - [Gateway]: Enter the network gateway.
+   - [Static]: Must be set to “yes”.
 
 
    <p align="center">
    <img alt="Screenshot from 2026-07-02 18-48-55" src="https://github.com/user-attachments/assets/69ebf422-93b7-4b9c-b3ff-f0d237276238 " />
-   <br><em>Figure 8: Wifi connection configuration </em></p>
+   <br><em>Figure 8: Static IP configuration </em></p>
 
 
 2. **Wired Ethernet Setup:** To access the Web Portal and control the V2 Pro via Ethernet, simply connect the device to your computer using an Ethernet cable. Next, change your computer's IP address so it is on the same subnet, and then open the Web Portal.
@@ -292,7 +287,7 @@ Access via **"Parameter Config"** in the menu bar
    - Computer IP must be in the same subnet (e.g., 192.168.100.10).
 
 
-### 7.2 Communication Protocol Configuration
+### 6.2 Communication Protocol Configuration
 
 #### UDP Output Configuration
 
@@ -310,7 +305,7 @@ Access: Click “Parameter Config” → “Robot Config” → “Driver”
 
 
 
-## 8 Relocalization QR Code Deployment
+## 7 Relocalization QR Code Deployment
 
 For detailed relocalization QR Code deployment Instructions, please refer to: https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/Relocalization-QR-Code-Deployment
 
@@ -318,7 +313,7 @@ For detailed relocalization QR Code deployment Instructions, please refer to: ht
 
 
 
-## 9. Operational FAQs & Troubleshooting
+## 8. Operational FAQs & Troubleshooting
 
 **Q: We are testing the V2 Pro in a narrow aisle (about 2 m wide) with very few ceiling features. The vehicle is driven roughly in the center, but we notice that rotation is not smooth even at a slow angular speed. What could be the cause and how can we improve performance?**
 
