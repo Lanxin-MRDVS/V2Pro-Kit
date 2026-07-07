@@ -224,8 +224,18 @@ If the position of the device changed during power shut down, or automatic match
 
 3. Status Indicators:
 
-   - Positioning status returns to normal and vehicle icon displays correctly on the map if relocalization is successful
-   - If relocalization fails, a "Positioning timeout" error disappears
+   - Positioning status returns to normal and vehicle icon displays correctly on the map if relocalization is successful, as shown in Figure 8.
+   - If relocalization fails, a "Positioning timeout" error disappears, as shown in Figure 7. 
+
+<p align="center">
+<img alt="Screenshot from 2026-07-02 18-48-55" src="https://github.com/user-attachments/assets/8c6a4ada-b45a-4dfc-9bfe-5112dd03424e " />
+<br><em>Figure 7: Positioning timeout example </em></p>
+
+<p align="center">
+<img alt="Screenshot from 2026-07-02 18-48-55" src="https://github.com/user-attachments/assets/8a699736-8a27-4905-acf7-cd91dddf4a59 " />
+<br><em>Figure 8: Relocalization successful </em></p>
+
+
    
 ### 5.3 Relocalization Tips
 
