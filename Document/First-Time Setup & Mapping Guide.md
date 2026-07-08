@@ -101,7 +101,7 @@ To access the Web Portal, open your web browser and enter http://192.168.100.201
 
 ### 3.1 Start Mapping
 
-Click the **[Start Mapping]** button in the red menu bar as shown in Figure 3, the system will enter mapping preparation state.
+Click the **[Start Mapping]** button in the red menu bar as shown in Figure 4, the system will enter mapping preparation state.
 
 <p align="center">
 <img alt="Screenshot from 2026-07-02 18-46-30" src="https://github.com/user-attachments/assets/11f95a79-0507-4049-8942-6e2ec25ba8cc" />
@@ -229,8 +229,8 @@ If the position of the device changed while the system was powered off, or autom
 
 3. Status Indicators:
 
-   - The positioning status returns to normal, and the vehicle icon is displayed correctly on the map, as shown in Figure 8.
-   - If relocalization fails, a "Positioning timeout" error appears, as shown in Figure 7. 
+   - The positioning status returns to normal, and the vehicle icon is displayed correctly on the map, as shown in Figure 10.
+   - If relocalization fails, a "Positioning timeout" error appears, as shown in Figure 9. 
 
 <p align="center">
 <img alt="Screenshot from 2026-07-02 18-48-55" src="https://github.com/user-attachments/assets/8c6a4ada-b45a-4dfc-9bfe-5112dd03424e " />
@@ -405,22 +405,6 @@ If your PC is on 192.168.2.X and you need to connect to a V2 Pro on 192.168.0.20
 
 For ROS, a clock synchronization program is currently under development and will be made available in a future release.
 
-### Q: Under the condition that the vehicle/device was stationary during power-off, the startup time still exceeds 35 seconds. What should I check? 
-
-**A:** Verify optimization settings:
-
-- Check /etc/rc.local:
-
-  - Access the device via SSH.
-  - Confirm that the line containing sleep 20 has been removed. If this line is present, it will add a 20-second delay.
-
-![Image placeholder: rc.local sleep setting](https://pub-7b25325ec91643989210e56dc1a181a4.r2.dev/v2pro_wp/c-15-1.png)
-
-- Check /home/fr1511b/start_all.sh:
-
-  - Confirm that all sleep commands within this script have their time arguments set to 1 (e.g., sleep 1). For example, lines like sleep 5 or sleep 10 should be changed to sleep 1.
-
-**Note:** This issue will be fixed in the production release.
 
 ### Q: Can we use LTE during the V2 PRO testing period?
 
