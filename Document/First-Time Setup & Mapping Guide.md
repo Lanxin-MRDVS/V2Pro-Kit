@@ -74,7 +74,7 @@ To access the Web Portal, open your web browser and enter http://192.168.100.201
 <br><em>Figure 3: Interface Overview</em></p>
 
 
-
+<div align="center">
 
 | Panel | UI Element / Feature | Description |
 | :--- | :--- | :--- |
@@ -94,7 +94,7 @@ To access the Web Portal, open your web browser and enter http://192.168.100.201
 | **Status Panel**<br>*(yellow box)* | Vehicle Coordinates | Displays real-time vehicle position coordinates (X, Y) |
 | | Mouse Coordinates | Displays mouse coordinates on the map |
 | **Right Panel**<br>*(green box)* | Ceiling-forward Camera | Displays the ceiling-forward camera image |
-
+</div>
 
 ## 3. Creating a Map
 
@@ -105,7 +105,7 @@ Click the **[Start Mapping]** button in the red menu bar as shown in Figure 3, t
 
 <p align="center">
 <img alt="Screenshot from 2026-07-02 18-46-30" src="https://github.com/user-attachments/assets/11f95a79-0507-4049-8942-6e2ec25ba8cc" />
-<br><em>Figure 3: Map creation </em></p>
+<br><em>Figure 4: Map creation </em></p>
 
 
 ### 3.2 Enter a Map Name
@@ -139,11 +139,16 @@ Once you enter the mapping interface, you will see:
    - Right-angle Turns: Maintain 90-degree angles during turns
    - Turning in Narrow Aisles (about 2 m wide): Avoid driving to the very end of a narrow aisle before turning. Leave a distance of at least 1.5 meters from the end point and turn at a slow speed to ensure stable localization.
 
+<div align="center">
+
 | Parameter | Limit | Description |
 | --- | --- | --- |
 | Maximum Linear Speed | ≤ 0.5 m/s | Straight motion speed limit |
 | Maximum Angular Speed | ≤ 20 °/s | Rotation speed limit |
 | Recommended Mapping Speed | ≈ 0.2 m/s | For optimal map quality |
+
+</div>
+
 
 3. **Coverage Strategy:**
 
@@ -165,14 +170,14 @@ To complete the mapping process, Click the [End Mapping] button after the vehicl
 
 <p align="center">
 <img alt="Screenshot from 2026-07-02 18-47-53" src="https://github.com/user-attachments/assets/16e5f316-e029-47fd-b506-ec6eb92e296c" />
-<br><em>Figure 4: End mapping </em></p>
+<br><em>Figure 5: End mapping </em></p>
 
 The mapping process indicator will be displayed at the top of the screen, showing the progress of map generation using camera data during the [Start Mapping] phase.
 
 
 <p align="center">
 <img alt="Screenshot from 2026-07-02 18-47-53" src="https://github.com/user-attachments/assets/05478c8c-4727-4a65-94a3-1245e7061f10 " />
-<br><em>Figure 5: Mapping indicators </em></p>
+<br><em>Figure 6: Mapping indicators </em></p>
 
 
 ## 4. Map Management
@@ -183,9 +188,9 @@ The mapping process indicator will be displayed at the top of the screen, showin
 
     In the local map interface, click **[Apply]** to activate the selected map.
 
-   <p align="center">
+<p align="center">
 <img alt="Screenshot from 2026-07-02 18-47-53" src="https://github.com/user-attachments/assets/d1fe1563-dd00-4dad-88fd-247c31e733e8" />
-<br><em>Figure 5: Map management </em></p>
+<br><em>Figure 7: Map management </em></p>
 
 2. **Reboot Required:**
 
@@ -208,7 +213,7 @@ Click the **[Relocate]** button in the menu bar, the system enters relocalizatio
 
 <p align="center">
 <img alt="Screenshot from 2026-07-02 18-48-55" src="https://github.com/user-attachments/assets/42f48723-6556-42e4-8560-245609c19a3a" />
-<br><em>Figure 6: Relocalization </em></p>
+<br><em>Figure 8: Relocalization </em></p>
 
 ### 5.2 Perform Relocalization
 
@@ -229,11 +234,11 @@ If the position of the device changed while the system was powered off, or autom
 
 <p align="center">
 <img alt="Screenshot from 2026-07-02 18-48-55" src="https://github.com/user-attachments/assets/8c6a4ada-b45a-4dfc-9bfe-5112dd03424e " />
-<br><em>Figure 7: Positioning timeout example </em></p>
+<br><em>Figure 9: Positioning timeout example </em></p>
 
 <p align="center">
 <img alt="Screenshot from 2026-07-02 18-48-55" src="https://github.com/user-attachments/assets/8a699736-8a27-4905-acf7-cd91dddf4a59 " />
-<br><em>Figure 8: Relocalization successful </em></p>
+<br><em>Figure 10: Relocalization successful </em></p>
 
 
    
@@ -266,7 +271,7 @@ If the position of the device changed while the system was powered off, or autom
 
    <p align="center">
    <img alt="Screenshot from 2026-07-02 18-48-55" src="https://github.com/user-attachments/assets/04f5349b-c8c0-45d3-87f6-2ed58e8055f9 " />
-   <br><em>Figure 7: Dynamic IP configuration </em></p>
+   <br><em>Figure 11: Dynamic IP configuration </em></p>
 
 
     **For Static IP:**
@@ -278,7 +283,7 @@ If the position of the device changed while the system was powered off, or autom
 
    <p align="center">
    <img alt="Screenshot from 2026-07-02 18-48-55" src="https://github.com/user-attachments/assets/69ebf422-93b7-4b9c-b3ff-f0d237276238 " />
-   <br><em>Figure 8: Static IP configuration </em></p>
+   <br><em>Figure 12: Static IP configuration </em></p>
 
 
 2. **Wired Ethernet Setup:** To access the Web Portal and control the V2 Pro via Ethernet, simply connect the device to your computer using an Ethernet cable. Next, change your computer's IP address so it is on the same subnet, and then open the Web Portal.
@@ -301,7 +306,7 @@ Access: Click “Parameter Config” → “Robot Config” → “Driver”
 
 <p align="center">
    <img alt="Screenshot from 2026-07-02 18-48-55" src="https://github.com/user-attachments/assets/4f4a0a26-973a-43b2-b5d8-81427f49112a " />
-   <br><em>Figure 9: UDP connection configuration </em></p>
+   <br><em>Figure 13: UDP connection configuration </em></p>
 
 
 
