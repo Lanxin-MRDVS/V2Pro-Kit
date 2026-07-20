@@ -67,7 +67,7 @@ The system follows a "map once, deploy everywhere" principle: only one unit is
 
 **5) Open Architecture & Intelligent Integration**
 Designed for flexibility, the solution offers a browser-based web portal for intuitive setup, real-time monitoring, and remote configuration - no additional software required. 
-For seamless system-level integration, the device supports industry-standard interfaces including CAN (CANopen), Gigabit Ethernet, and provides ROS/ROS 2 packages, UDP communication, MQTT communication, and HTTP APIs (supporting POST/GET methods), enabling direct and continuous feeding of precise vehicle location data into higher-level Fleet Management Systems (FMS) or Warehouse Management Systems (WMS).
+For seamless system-level integration, the device supports industry-standard interfaces including CAN (CANopen), Gigabit Ethernet, and provides communication protocols including ROS/ROS 2 packages, UDP, MQTT, and HTTP APIs (supporting POST/GET methods), enabling direct and continuous feeding of precise vehicle location data into higher-level Fleet Management Systems (FMS) or Warehouse Management Systems (WMS).
 
 
 
