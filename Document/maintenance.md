@@ -26,7 +26,7 @@ Use the MRDVS English logo and keep the title centered. Do not add a separate ro
 
 Place each history anchor inside its `<details>` content after `<summary>`. In-page links target GitHub's rendered `#user-content-software-update-history` and `#user-content-document-update-history` IDs. Verify actual GitHub clicks, not just a local rendering with renamed IDs.
 
-Organize the main reading path as product fit, mounting and connection, version checks and upgrades, mapping and validation, then integration. Place LxCameraViewer in the upgrade step, QR resources in the mapping step, and SDKs beside their protocol references. Do not duplicate these in a separate download table. Retain detailed product reference material in a collapsed section. Give downloads clear component labels; retain the real filenames and original asset URLs.
+Use a concise Step / What to do / Guide table for the five deployment steps. Keep the original workflow illustration at 640 px. Use an aligned Tools and integration table for LxCameraViewer, optional QR resources, protocols and SDKs, identifying the relevant step. Do not repeat firmware downloads outside Release status. Keep the matching Frontend/Body warning visible and conditional firmware details in a disclosure. Retain detailed product reference material in a collapsed section. Give downloads clear component labels; retain the real filenames and original asset URLs.
 
 ## Software versioning
 
