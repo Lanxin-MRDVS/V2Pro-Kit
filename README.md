@@ -53,9 +53,6 @@ The module provides localization. Vehicle motion control, goods identification a
 <strong>Device update packages</strong><br>
 <a href="https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/rob0525.zip">Web Frontend</a> + <a href="https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/hontai_2.1.43-V2-Normal_971b8_260529A0529_200954_md5182a8.zip">Algorithm (Body)</a><br>
 Update as a matching pair.<br><br>
-<a href="https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2Pro-update-V1.1.2_260609.bin">Hardware Patch</a><br>
-<a href="https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2_firmware_update_260324_V1.1.2.bin">Integrated Firmware</a><br>
-Select only as directed in <a href="#user-content-check-versions-and-update-if-needed">step 3</a>; these are not PC installers.<br><br>
 <strong>Latest white paper</strong><br>
 <code>V0.1</code> · 2026-10-09<br>
 <a href="Document/V2Pro_Localization_Module_Product_White_Paper_V0.1.pdf">English White Paper</a><br><br>
@@ -86,7 +83,10 @@ Select only as directed in <a href="#user-content-check-versions-and-update-if-n
 </tr>
 <tr>
 <td><a id="check-versions-and-update-if-needed"></a><a id="3-check-versions-and-update-if-needed"></a><strong>3. Check versions</strong></td>
-<td>Check Body, Frontend and embedded firmware. If an update is needed, select matching packages from Release status.</td>
+<td>Check Body, Frontend and embedded firmware. Use the matching Frontend + Body pair in Release status if an update is needed.<br><br>
+<strong>Other firmware — only when required:</strong><br>
+<a href="https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2Pro-update-V1.1.2_260609.bin">Hardware Patch</a> — apply through LxCameraViewer as directed in the guide.<br>
+<a href="https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2_firmware_update_260324_V1.1.2.bin">Integrated Firmware</a> — follow the release instructions if the Web Front-End upgrade option is missing.</td>
 <td><a href="Document/Firmware%20Upgrade%20%26%20Device%20IP%20Modification.md">Upgrade Guide</a></td>
 </tr>
 <tr>
@@ -102,16 +102,7 @@ Select only as directed in <a href="#user-content-check-versions-and-update-if-n
 </tbody>
 </table>
 
-> **Upgrade rule:** Frontend and Body must be a matching pair. The four firmware downloads are **not** four mandatory installation steps.
-
-<details>
-<summary><strong>When to use the other firmware packages</strong></summary>
-
-- **Hardware patch:** apply through LxCameraViewer as directed in the Upgrade Guide.
-- **Integrated firmware:** follow the release instructions if the Web Front-End upgrade option is missing.
-- After upgrading, verify the Frontend and Body versions in the web interface.
-
-</details>
+> **Upgrade rule:** These are device updates, not PC installers or four mandatory installation steps. Use a matching Frontend + Body pair and verify both versions after upgrading.
 
 <a id="6-documentation"></a><a id="integration"></a><a id="tools-and-integration-downloads"></a>
 ## Tools and integration

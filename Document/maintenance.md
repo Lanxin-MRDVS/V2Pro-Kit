@@ -22,11 +22,11 @@ Publish English customer-facing PDFs and Markdown. Do not upload Word sources or
 
 ## Homepage presentation
 
-Use the MRDVS English logo and keep the title centered. Do not add a separate row of navigation buttons. Place a short version-check reminder and two collapsed histories below the title, with no duplicated history tables at the bottom. The status card is the single current firmware download area. It shows the latest software packages and latest documentation separately. Keep upgrade conditions next to the package links and in the upgrade step.
+Use the MRDVS English logo and keep the title centered. Do not add a separate row of navigation buttons. Place a short version-check reminder and two collapsed histories below the title, with no duplicated history tables at the bottom. The status card shows the current release, matching Frontend and Body packages, and latest documentation. Put conditional Hardware Patch and Integrated Firmware downloads only in step 3, beside their usage conditions.
 
 Place each history anchor inside its `<details>` content after `<summary>`. In-page links target GitHub's rendered `#user-content-software-update-history` and `#user-content-document-update-history` IDs. Verify actual GitHub clicks, not just a local rendering with renamed IDs.
 
-Use a concise Step / What to do / Guide table for the five deployment steps. Keep the original workflow illustration at 640 px. Use an aligned Tools and integration table for LxCameraViewer, optional QR resources, protocols and SDKs, identifying the relevant step. Do not repeat firmware downloads outside Release status. Keep the matching Frontend/Body warning visible and conditional firmware details in a disclosure. Retain detailed product reference material in a collapsed section. Give downloads clear component labels; retain the real filenames and original asset URLs.
+Use a concise Step / What to do / Guide table for the five deployment steps. Keep the original workflow illustration at 640 px. Use an aligned Tools and integration table for LxCameraViewer, optional QR resources, protocols and SDKs, identifying the relevant step. Do not duplicate download links between Release status and the steps. Keep conditional firmware downloads directly in step 3 and the matching Frontend/Body warning visible. Retain detailed product reference material in a collapsed section. Give downloads clear component labels; retain the real filenames and original asset URLs.
 
 ## Software versioning
 
@@ -38,7 +38,7 @@ For each new software release:
 2. Add the supplied changes to `releases/README.md`; never invent features, fixes or test results.
 3. Publish packages under a new software Release without replacing older binaries.
 4. Record package filenames, component roles, sizes, checksums when verified, and upgrade instructions.
-5. Add a row to the homepage software history and update the current packages in the status card.
+5. Add a row to the homepage software history and update the current packages in the status card and conditional packages in step 3.
 6. Verify asset links, guide links and the rendered page. Do not treat a documentation update as a firmware release.
 
 Existing GitHub Release descriptions remain historical publication records. Maintain future consolidated English changes in the single Release Notes file and link the corresponding section from future Releases.
