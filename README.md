@@ -1,87 +1,177 @@
-# MRDVS V2 Pro - Infrastructure-Free Fusion-SLAM™ Localization Module
+<p align="center"><img src="img/mrdvs-logo-en.webp" alt="MRDVS Mobile Robot Vision Expert" width="240"></p>
 
-## 1. Overview
+<a id="mrdvs-v2-pro---infrastructure-free-fusion-slam-localization-module"></a>
+<h1 align="center">MRDVS V2 Pro Localization Module</h1>
 
-The MRDVS V2 Pro is an all-in-one embedded localization device engineered to serve as the core positioning source for the modern digital warehouse, supporting AGVs, AMRs, and the full spectrum of Material Handling Vehicles (MHVs)—from forklifts and reach trucks to pallet trucks and tow tractors. Its compact, integrated design combines a 2D SLAM LiDAR, a ceiling-forward vision sensor, and an IMU into a single, factory-calibrated unit.
+<p align="center"><strong>Onboard LiDAR, vision and IMU fusion for vehicle position, heading and localization status.</strong></p>
 
-At its core is our Fusion SLAM™ technology—a tightly coupled sensor fusion algorithm and deep-learning-based engine refined through nearly ten years of real-world data collection and corner-case optimization. Built on this experience, the system continuously evaluates and weights multi-sensor data in real time, adapting to changing environmental conditions to ensure reliable, uninterrupted operation. Through the intelligent fusion of LiDAR point clouds, visual features, and IMU data, it consistently delivers stable ±3 cm localization accuracy at 10 Hz, with all processing performed onboard.
+> **Before you update:** Check the installed Body, Frontend and embedded firmware versions. Use the matching packages and upgrade instructions. White Paper V0.1 is a document revision, not a firmware version.
 
-## 2. Key Applications
+<details>
+<summary><strong>Software history</strong> · V1.2.0 / V1.1.1</summary>
 
-The V2 Pro is engineered for three core application areas: 
+<a id="software-update-history"></a>
 
-**1)	The Core Positioning Device for AGVs & AMRs**\
-The V2 Pro provides the centimeter-accurate, infrastructure-free positioning essential for Autonomous Guided Vehicles (AGVs) and Autonomous Mobile Robots (AMRs) to execute core tasks-such as material transport, facility inspection, and industrial cleaning-with full reliability.
+| Release | GitHub publication date | Notes / packages |
+| --- | --- | --- |
+| V1.2.0 | 2026-06-12 | [Release Notes](releases/README.md#v1-2-0) · [Original Release](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/tag/V2-Pro-V1.2.0) |
+| V1.1.1 | 2026-03-10 | [Release Notes](releases/README.md#v1-1-1) · [Original Release](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/tag/Firmware) |
 
-**2)	The Ideal Retrofit Kit for Manual-to-Autonomy Conversion**\
-It serves as the complete positioning and navigation unit for transforming manual forklifts into autonomous AGVs. This enables rapid, cost-effective automation of existing assets.
+The release version does not replace the individual component versions. Existing asset names and historical dates are retained. All detailed software changes are collected in one [Release Notes](releases/README.md) file.
 
-**3)	The Precision Awareness Device for Manual MHVs**\
-For the broader spectrum of non-autonomous material handling vehicles (MHVs) including reach trucks, pallet trucks, order pickers, tow tractors, and more, the V2 Pro provides high-precision real-time location data. This enables critical capabilities such as proximity safety alerts, accurate fleet tracking, and rich data feeds for digital twin systems, forming the intelligent sensory layer of the modern digital warehouse.
+</details>
 
-## 3. Technical Specifications
+<details>
+<summary><strong>Document history</strong> · White Paper V0.1 / existing deployment guides</summary>
 
-| Parameter                | Specification                                                                       |
-| ------------------------ | ----------------------------------------------------------------------------------- |
-| **Positioning Accuracy** | ±3 cm (up to 15m ceiling height)                                                    |
-| **Update Rate**          | 10 Hz                                                                               |
-| **Sensors**              | 2D LiDAR (270° FoV, 40m range), IR Camera (108°×57° FoV, 8 IR emitters), 6-axis IMU |
-| **Processing**           | Onboard edge computing, no external server required                                 |
-| **Map Capacity**         | Single map &gt;100,000 m²; Total storage &gt;1,000,000 m²                           |
-| **Power**                | 24V DC / 3A                                                                         |
-| **Interfaces**           | Gigabit Ethernet, CAN Bus (CANopen), Wi-Fi 2.4GHz, 4x Digital I/O, Audio            |
-| **Environmental**        | IP54, -20°C to +60°C operating, shock-resistant for forklift mounting               |
-| **Dimensions**           | 146.5 × 66.3 × 89.4 mm (excl. cables)                                               |
+<a id="document-update-history"></a>
 
----
-## 4. Resources
+| Document | Version | Document date | Read |
+| --- | --- | --- | --- |
+| Localization Module Product White Paper | V0.1 | 2026-10-09 | [English PDF](Document/V2Pro_Localization_Module_Product_White_Paper_V0.1.pdf) |
+| First-Time Setup & Mapping Guide | Unversioned | Not specified | [Guide](Document/First-Time%20Setup%20%26%20Mapping%20Guide.md) |
+| Firmware Upgrade & Device IP Modification | Unversioned | June 2026 | [Guide](Document/Firmware%20Upgrade%20%26%20Device%20IP%20Modification.md) |
 
-The table below lists the download entry points for V2 Pro V1.2.0. For detailed update notes, package descriptions, version compatibility information, and upgrade instructions, see the [Release Notes](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/tag/V2-Pro-V1.2.0).
+The existing guides retain their original paths and interface instructions. Check the installed software before using those instructions. The white paper describes the product and its operating limits; it does not certify every capability against every historical firmware package.
 
-| Resource                                       | Download                                                                                                                                                 |
-| ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Frontend Package**                           | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/rob0525.zip)                                                   |
-| **Algorithm Firmware Package**                 | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/hontai_2.1.43-V2-Normal_971b8_260529A0529_200954_md5182a8.zip) |
-| **Hardware Patch**                             | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2Pro-update-V1.1.2_260609.bin)                                |
-| **V2 Pro Integrated Firmware Upgrade Package** | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2_firmware_update_260324_V1.1.2.bin)                          |
-| **ROS1 SDK**                                   | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2_ROS1.zip)                                                   |
-| **ROS2 SDK**                                   | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2_ROS2.zip)                                                   |
-| **Pre-defined Positioning QR Codes**           | [Download Link](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2Pro_QRcode_tags.zip)                                         |
+</details>
 
+<p align="center">
+  <a href="#start-here"><img src="img/button-start-here.svg" alt="Start Here" width="220" height="44"></a>
+  <a href="#latest-software"><img src="img/button-downloads.svg" alt="Downloads" width="220" height="44"></a>
+  <a href="#integration"><img src="img/button-integration.svg" alt="Integration" width="220" height="44"></a>
+</p>
 
-## 5. System Highlights
+<a id="1-overview"></a>
+<table>
+<tr>
+<td width="66%" valign="top">
+<strong>Localization for mobile equipment</strong><br><br>
+V2 Pro combines an upward-looking camera, 2D LiDAR, IMU and onboard computing in one factory-calibrated module. It builds maps and supplies planar position (X, Y), heading and localization status to vehicle controllers and management systems.<br><br>
+<img src="img/v2pro-localization-overview.jpeg" alt="V2 Pro module, vehicle position on a map, heading and localization status" width="650"><br><br>
+The module provides localization. Vehicle motion control, goods identification and fleet applications remain responsibilities of the integrating system.
+</td>
+<td width="34%" valign="top">
+<strong>Release status</strong><br><br>
+<strong>Latest software</strong><br>
+<code>V1.2.0</code> · 2026-06-12<br>
+<a href="#latest-software">Firmware packages</a> · <a href="releases/README.md#v1-2-0">Release Notes</a><br><br>
+<strong>Latest white paper</strong><br>
+<code>V0.1</code> · 2026-10-09<br>
+<a href="Document/V2Pro_Localization_Module_Product_White_Paper_V0.1.pdf">English White Paper</a><br><br>
+<strong>Deployment guides</strong><br>
+<a href="Document/First-Time%20Setup%20%26%20Mapping%20Guide.md">Setup and mapping</a><br>
+<a href="Document/Firmware%20Upgrade%20%26%20Device%20IP%20Modification.md">Firmware upgrade</a><br><br>
+<a href="#user-content-software-update-history"><strong>View software history ↑</strong></a><br>
+<a href="#user-content-document-update-history">View document history ↑</a>
+</td>
+</tr>
+</table>
 
-**1) Near-Zero Infrastructure Deployment**
-The system operates immediately out of the box with minimal configuration, requiring no pre-installed infrastructure such as UWB anchors, AprilTags, beacons, or reflectors. This delivers plug-and-play functionality, reducing deployment complexity, time, and cost.
-Seamless Zone Transition & Rapid Relocalization
-With its ceiling-forward camera, the system can instantly re-localize by scanning a QR code when transitioning between mapped areas - such as moving from outdoor yards into indoor warehouses or recovering position after movement. This ensures continuous, accurate positioning without manual intervention.
+## Start here
 
-**2) Field-Proven Technology, Scaled from AMRs to Your Fleet**
-Fusion-SLAM™ is field-hardened through large-scale autonomous deployments. Refined across over a hundred real-world sites, it powers critical material handling and industrial operations in diverse environments. Now, this same proven core is engineered to scale beyond dedicated AMRs.
+<table>
+<thead><tr><th width="620" align="left">Step</th><th width="240" align="left">Resource</th></tr></thead>
+<tbody>
+<tr><td>1. Check product fit, mounting requirements and operating limits</td><td><a href="Document/V2Pro_Localization_Module_Product_White_Paper_V0.1.pdf">White Paper</a></td></tr>
+<tr><td>2. Check installed versions and follow the required upgrade path</td><td><a href="Document/Firmware%20Upgrade%20%26%20Device%20IP%20Modification.md">Upgrade Guide</a></td></tr>
+<tr><td>3. Connect, create a map, initialize localization and validate the route</td><td><a href="Document/First-Time%20Setup%20%26%20Mapping%20Guide.md">Setup &amp; Mapping Guide</a></td></tr>
+<tr><td>4. Integrate pose data and check status and timestamps</td><td><a href="#integration">Integration interfaces</a></td></tr>
+</tbody>
+</table>
 
-**3) Innovative & Reliable System Architecture**
-As a fully integrated embedded system designed to overcome the challenges of varied industrial environments, this device employs a tightly-coupled LiDAR-Visual-Inertial SLAM algorithm and a deep learning-enhanced vision engine. It harmonizes data from its integrated 2D LiDAR, vision sensor, and IMU within a single compact unit, delivering reliable ±3 cm accuracy whether operating in narrow aisles, dynamic storage layouts, open areas, or high-bay racking systems.
+<p align="center"><img src="img/v2pro-deployment-workflow.jpeg" alt="Mount and power, configure, build the map, then localize" width="900"></p>
 
-**4) Built for scale, not just precision**
-The system follows a "map once, deploy everywhere" principle: only one unit is required to generate a master map, which can be distributed to all other vehicles. You don't need to map everything at once - skip areas under construction, blocked by materials, or not yet ready. Later, simply extend the existing map by adding new zones (e.g., a new workshop). The system scales flexibly as your facility evolves.
+<a id="4-resources"></a>
+## Latest software
 
-**5) Open Architecture & Intelligent Integration**
-Designed for flexibility, the solution offers a browser-based web portal for intuitive setup, real-time monitoring, and remote configuration - no additional software required. 
-For seamless system-level integration, the device supports industry-standard interfaces including CAN (CANopen), Gigabit Ethernet, and provides communication protocols including ROS/ROS 2 packages, UDP, MQTT, and HTTP APIs (supporting POST/GET methods), enabling direct and continuous feeding of precise vehicle location data into higher-level Fleet Management Systems (FMS) or Warehouse Management Systems (WMS).
+Current public release: **V1.2.0**, published **2026-06-12**. These are device update packages, not PC application installers.
 
+| Component | Use | Download |
+| --- | --- | --- |
+| Web frontend | Paired with the algorithm package in this release | [Frontend Package](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/rob0525.zip) |
+| Localization algorithm | Body component; update with the matching frontend | [Algorithm Firmware](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/hontai_2.1.43-V2-Normal_971b8_260529A0529_200954_md5182a8.zip) |
+| Hardware patch | Apply through LxCameraViewer as directed in the upgrade guide | [Hardware Patch](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2Pro-update-V1.1.2_260609.bin) |
+| Integrated firmware | Used when the Web Front-End upgrade option is missing; see release instructions | [Integrated Firmware](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2_firmware_update_260324_V1.1.2.bin) |
 
+Read the [Release Notes](releases/README.md#v1-2-0) and [Upgrade Guide](Document/Firmware%20Upgrade%20%26%20Device%20IP%20Modification.md) before choosing packages. The frontend and algorithm packages are coupled for this release. After upgrading, check the Frontend and Body versions in the web interface. Do not treat all four packages as an unconditional installation sequence.
 
-## 6. Documentation
+## Tools and integration downloads
 
-| Document                         | Link                                                                                                    |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| **First-Time Setup & Mapping Guide** |[View Documentation](https://github.com/Lanxin-MRDVS/V2Pro-Kit/blob/main/Document/First-Time%20Setup%20%26%20Mapping%20Guide.md)|
-| **Firmware Upgrade & Device IP Modification** |[View Documentation](https://github.com/Lanxin-MRDVS/V2Pro-Kit/blob/main/Document/Firmware%20Upgrade%20%26%20Device%20IP%20Modification.md)|
-| **HTTP Communication Protocol**  | [View Documentation](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-HTTP-Communication-Protocol) |
-|**MQTT Communication Protocol**   |[View Documentation](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-MQTT-communication-protocal )|
-| **UDP Communication Protocol**   | [View Documentation](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-UDP-Communication-Protocol)  |
-| **ROS1 Interface Documentation** | [View Documentation](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-ROS1-Interface)              |
-| **ROS2 Interface Documentation** | [View Documentation](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-ROS2-Interface)              |
-| **Relocalization QR Code Deployment** |[View Documentation](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/Relocalization-QR-Code-Deployment)|
+| Resource | Use | Download / guide |
+| --- | --- | --- |
+| LxCameraViewer | Embedded firmware update and device IP configuration | [Windows Installer](https://github.com/Lanxin-MRDVS/CameraSDK/releases/download/SDK-V2.4.60/MRDVS-2.4.60.260126-windows-installer.exe) · [Ubuntu Package](https://github.com/Lanxin-MRDVS/CameraSDK/releases/download/SDK-V2.4.60/LxCameraViewer-ubuntu20-viewer.tar.gz) |
+| ROS 1 SDK | ROS 1 integration | [SDK Package](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2_ROS1.zip) · [Interface](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-ROS1-Interface) |
+| ROS 2 SDK | ROS 2 integration | [SDK Package](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2_ROS2.zip) · [Interface](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-ROS2-Interface) |
+| Positioning QR codes | Optional relocalization assistance; register codes in the current map | [QR Code Templates](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2Pro_QRcode_tags.zip) · [Deployment Guide](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/Relocalization-QR-Code-Deployment) |
 
+LxCameraViewer is used for the documented firmware and IP tasks; normal configuration and mapping use the device's browser-based platform.
 
+<a id="5-system-highlights"></a>
+## Capabilities
+
+| Capability | Application |
+| --- | --- |
+| Sensor fusion | Combines LiDAR, upward-looking vision and IMU to estimate position and heading onboard. |
+| Mapping and extensions | Creates maps, extends existing coverage with overlapping mapping runs, and manages saved maps. |
+| Relocalization | Initializes pose by registered QR code, vehicle-marker placement or position and heading entry. |
+| Map reuse | Distributes an existing map to other vehicles, subject to mounting height and environmental requirements. |
+| Optional external odometry | Accepts vehicle motion data when available; physical odometry is not mandatory for standalone localization. |
+| System integration | Supplies pose, timestamps, localization status, map/device information and task feedback. |
+
+<a id="2-key-applications"></a>
+## Applications
+
+V2 Pro supplies localization for AGVs, AMRs and material-handling vehicles in warehouses, production facilities and intralogistics. Customer systems can use the output for vehicle tracking, route analysis and digital-twin applications. Goods tracking additionally requires item identity and loading or unloading records.
+
+<p align="center"><img src="img/v2pro-applications.jpeg" alt="Warehouse handling, production supply and intralogistics application scenes from the V2 Pro white paper" width="800"></p>
+
+<a id="3-technical-specifications"></a>
+## Key specifications and operating limits
+
+The following values come from **White Paper V0.1**, and apply when its installation, environmental and map requirements are met. Validate the delivered firmware and actual operating routes for the project.
+
+| Parameter | Specification / condition |
+| --- | --- |
+| Localization output | Planar X, Y position, heading and localization status |
+| Localization accuracy | 1–3 cm position error; ±1° heading error |
+| Valid pose output | 20 Hz; output latency <20 ms. Update interval and latency are different measures. |
+| Vehicle speed | Up to 15 km/h for localization; up to 3 km/h for mapping |
+| Map creation | Up to 20,000 m² and 2,000 m cumulative travel per normal mapping session |
+| Operating environment | Primarily indoor; brief outdoor sections require route-specific assessment |
+| Camera | Upward-looking; 1–15 m to overhead features; 108° × 57° field of view (±3°) |
+| LiDAR | 270° scan; 15 m range at 10% reflectivity / 40 m at 90% reflectivity |
+| Connectivity | 100 Mbit/s Ethernet; 2.4 GHz Wi-Fi; CANopen; 2 digital inputs and 2 digital outputs |
+| Power and enclosure | 24 V DC / 3 A supply; 19.2–28.8 V input; IP54; −20 to 60 °C operation |
+| Size and weight | 146.5 × 66.3 × 89.4 mm; approximately 543 g |
+
+Keep the camera and LiDAR views clear and mount the module level on a rigid structure. Avoid long, feature-poor routes and prolonged direct sunlight on the camera. Reusing a map after a small mounting-height change requires a difference of no more than 50 cm and unchanged surrounding LiDAR features. Use a separate map for each floor.
+
+Coordinates alone do not establish valid localization: check localization status and timestamps. The module continues computing onboard, so communication loss and localization failure are different conditions. Full performance definitions and limits are in the [White Paper](Document/V2Pro_Localization_Module_Product_White_Paper_V0.1.pdf).
+
+<a id="6-documentation"></a>
+## Integration
+
+The existing Wiki pages remain the protocol references; their URLs are unchanged.
+
+| Interface / task | Reference |
+| --- | --- |
+| HTTP | [HTTP Communication Protocol](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-HTTP-Communication-Protocol) |
+| MQTT | [MQTT Communication Protocol](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-MQTT-communication-protocal) |
+| UDP | [UDP Communication Protocol](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-UDP-Communication-Protocol) |
+| ROS 1 | [ROS 1 Interface](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-ROS1-Interface) |
+| ROS 2 | [ROS 2 Interface](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-ROS2-Interface) |
+| QR-assisted relocalization | [QR Code Deployment](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/Relocalization-QR-Code-Deployment) |
+
+## Repository layout
+
+```text
+Document/   English white paper, existing guides and documentation index
+img/        Existing images and shared page visuals
+releases/   One consolidated Release Notes file; binaries stay in GitHub Releases
+README.md   Product overview, current downloads and collapsed version histories
+```
+
+[Documentation index](Document/README.md) · [Maintenance guide](Document/maintenance.md) · [All software Releases](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases)
+
+<sub>Zhejiang MRDVS Technology Co., Ltd. · <a href="https://mrdvs.com/v2-pro-rtls-slam-solution">Product website</a></sub>
