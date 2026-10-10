@@ -48,7 +48,7 @@ This file is the consolidated English software history. Original GitHub Releases
 
 * Upgrade via the MRDVS GUI Software *LxCameraViewer* ([Ubuntu](https://github.com/Lanxin-MRDVS/CameraSDK/releases/download/SDK-V2.4.60/LxCameraViewer-ubuntu20-viewer.tar.gz)/[Windows](https://github.com/Lanxin-MRDVS/CameraSDK/releases/download/SDK-V2.4.60/MRDVS-2.4.60.260126-windows-installer.exe)):
   * Hardware Patch: [V2Pro-update-V1.1.2_260609.bin](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2Pro-update-V1.1.2_260609.bin)
- 
+
 > **Notes:**
 > 1. Due to the firmware version, the "Web Front-End" option may not appear under **Software Upgrade** in the Web portal. If this occurs, update the firmware first using the LxCameraViewer GUI with the file below. After the update, confirm that the "Web Front-End" option appears in the Web portal before proceeding with other updates.
 >    * Firmware file: [V2_firmware_update_260324_V1.1.2.bin](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2_firmware_update_260324_V1.1.2.bin)
@@ -113,4 +113,3 @@ The original release title contains `260318`, while its GitHub publication date 
 | `V2Pro_QRcode_tags.zip` | 84,953 | [Download](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/Firmware/V2Pro_QRcode_tags.zip) |
 | `V2_firmware_update_260321_V1.1.1.fix.bin` | 58,482,036 | [Download](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/Firmware/V2_firmware_update_260321_V1.1.1.fix.bin) |
 | `V2_ROS_SDK.zip` | 6,360,539 | [Download](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/Firmware/V2_ROS_SDK.zip) |
-
