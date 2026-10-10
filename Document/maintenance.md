@@ -10,7 +10,7 @@ Keep the repository name, existing files, `Document/` and `img/` paths, Wiki pag
 
 | Location | Responsibility |
 | --- | --- |
-| `README.md` | Product overview, one current download table, integration links, software and document histories |
+| `README.md` | Product overview, current packages in Release status, deployment steps, integration links and collapsed histories |
 | `Document/README.md` | Index of current product documents, deployment guides and existing Wiki references |
 | `Document/` | Published English PDF and Markdown documents; retain older editions here when superseded |
 | `img/` | Shared brand assets, original product illustrations and existing guide images |
@@ -22,11 +22,11 @@ Publish English customer-facing PDFs and Markdown. Do not upload Word sources or
 
 ## Homepage presentation
 
-Use the MRDVS English logo and brand-blue navigation. Keep the title centered. Place a short version-check reminder and two collapsed histories below the title, with no duplicated history tables at the bottom. The status card shows the latest software and latest documentation separately.
+Use the MRDVS English logo and keep the title centered. Do not add a separate row of navigation buttons. Place a short version-check reminder and two collapsed histories below the title, with no duplicated history tables at the bottom. The status card is the single current firmware download area. It shows the latest software packages and latest documentation separately. Keep upgrade conditions next to the package links and in the upgrade step.
 
 Place each history anchor inside its `<details>` content after `<summary>`. In-page links target GitHub's rendered `#user-content-software-update-history` and `#user-content-document-update-history` IDs. Verify actual GitHub clicks, not just a local rendering with renamed IDs.
 
-The main download table lists current device packages. Tools, SDKs and QR templates have a separate table. Give downloads clear component labels; retain the real filenames and original asset URLs.
+Organize the main reading path as product fit, mounting and connection, version checks and upgrades, mapping and validation, then integration. Place LxCameraViewer in the upgrade step, QR resources in the mapping step, and SDKs beside their protocol references. Do not duplicate these in a separate download table. Retain detailed product reference material in a collapsed section. Give downloads clear component labels; retain the real filenames and original asset URLs.
 
 ## Software versioning
 
@@ -38,7 +38,7 @@ For each new software release:
 2. Add the supplied changes to `releases/README.md`; never invent features, fixes or test results.
 3. Publish packages under a new software Release without replacing older binaries.
 4. Record package filenames, component roles, sizes, checksums when verified, and upgrade instructions.
-5. Add a row to the homepage software history and update the current download table and status card.
+5. Add a row to the homepage software history and update the current packages in the status card.
 6. Verify asset links, guide links and the rendered page. Do not treat a documentation update as a firmware release.
 
 Existing GitHub Release descriptions remain historical publication records. Maintain future consolidated English changes in the single Release Notes file and link the corresponding section from future Releases.

@@ -36,12 +36,6 @@ The existing guides retain their original paths and interface instructions. Chec
 
 </details>
 
-<p align="center">
-  <a href="#start-here"><img src="img/button-start-here.svg" alt="Start Here" width="220" height="44"></a>
-  <a href="#latest-software"><img src="img/button-downloads.svg" alt="Downloads" width="220" height="44"></a>
-  <a href="#integration"><img src="img/button-integration.svg" alt="Integration" width="220" height="44"></a>
-</p>
-
 <a id="1-overview"></a>
 <table>
 <tr>
@@ -53,15 +47,18 @@ The module provides localization. Vehicle motion control, goods identification a
 </td>
 <td width="34%" valign="top">
 <strong>Release status</strong><br><br>
-<strong>Latest software</strong><br>
-<code>V1.2.0</code> · 2026-06-12<br>
-<a href="#latest-software">Firmware packages</a> · <a href="releases/README.md#v1-2-0">Release Notes</a><br><br>
+<a id="latest-software"></a><a id="4-resources"></a>
+<strong>Latest software · V1.2.0</strong><br>
+2026-06-12 · <a href="releases/README.md#v1-2-0">Release Notes</a><br><br>
+<strong>Device update packages</strong><br>
+<a href="https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/rob0525.zip">Web Frontend</a> + <a href="https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/hontai_2.1.43-V2-Normal_971b8_260529A0529_200954_md5182a8.zip">Algorithm (Body)</a><br>
+Update as a matching pair.<br><br>
+<a href="https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2Pro-update-V1.1.2_260609.bin">Hardware Patch</a><br>
+<a href="https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2_firmware_update_260324_V1.1.2.bin">Integrated Firmware</a><br>
+Select only as directed in <a href="#user-content-check-versions-and-update-if-needed">step 3</a>; these are not PC installers.<br><br>
 <strong>Latest white paper</strong><br>
 <code>V0.1</code> · 2026-10-09<br>
 <a href="Document/V2Pro_Localization_Module_Product_White_Paper_V0.1.pdf">English White Paper</a><br><br>
-<strong>Deployment guides</strong><br>
-<a href="Document/First-Time%20Setup%20%26%20Mapping%20Guide.md">Setup and mapping</a><br>
-<a href="Document/Firmware%20Upgrade%20%26%20Device%20IP%20Modification.md">Firmware upgrade</a><br><br>
 <a href="#user-content-software-update-history"><strong>View software history ↑</strong></a><br>
 <a href="#user-content-document-update-history">View document history ↑</a>
 </td>
@@ -70,45 +67,63 @@ The module provides localization. Vehicle motion control, goods identification a
 
 ## Start here
 
-<table>
-<thead><tr><th width="620" align="left">Step</th><th width="240" align="left">Resource</th></tr></thead>
-<tbody>
-<tr><td>1. Check product fit, mounting requirements and operating limits</td><td><a href="Document/V2Pro_Localization_Module_Product_White_Paper_V0.1.pdf">White Paper</a></td></tr>
-<tr><td>2. Check installed versions and follow the required upgrade path</td><td><a href="Document/Firmware%20Upgrade%20%26%20Device%20IP%20Modification.md">Upgrade Guide</a></td></tr>
-<tr><td>3. Connect, create a map, initialize localization and validate the route</td><td><a href="Document/First-Time%20Setup%20%26%20Mapping%20Guide.md">Setup &amp; Mapping Guide</a></td></tr>
-<tr><td>4. Integrate pose data and check status and timestamps</td><td><a href="#integration">Integration interfaces</a></td></tr>
-</tbody>
-</table>
+Follow the deployment sequence below. Existing users can check the latest packages in **Release status** or open the version histories above.
 
 <p align="center"><img src="img/v2pro-deployment-workflow.jpeg" alt="Mount and power, configure, build the map, then localize" width="900"></p>
 
-<a id="4-resources"></a>
-## Latest software
+### 1. Check product fit
 
-Current public release: **V1.2.0**, published **2026-06-12**. These are device update packages, not PC application installers.
+V2 Pro supplies localization for AGVs, AMRs and material-handling vehicles, primarily indoors. Confirm mounting space, sensor views, power, route features and the required positioning performance before deployment. Vehicle control and application logic remain part of your system.
 
-| Component | Use | Download |
-| --- | --- | --- |
-| Web frontend | Paired with the algorithm package in this release | [Frontend Package](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/rob0525.zip) |
-| Localization algorithm | Body component; update with the matching frontend | [Algorithm Firmware](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/hontai_2.1.43-V2-Normal_971b8_260529A0529_200954_md5182a8.zip) |
-| Hardware patch | Apply through LxCameraViewer as directed in the upgrade guide | [Hardware Patch](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2Pro-update-V1.1.2_260609.bin) |
-| Integrated firmware | Used when the Web Front-End upgrade option is missing; see release instructions | [Integrated Firmware](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2_firmware_update_260324_V1.1.2.bin) |
+Read the [Product White Paper](Document/V2Pro_Localization_Module_Product_White_Paper_V0.1.pdf) for requirements and limits, or expand the [product reference](#user-content-product-reference) below.
 
-Read the [Release Notes](releases/README.md#v1-2-0) and [Upgrade Guide](Document/Firmware%20Upgrade%20%26%20Device%20IP%20Modification.md) before choosing packages. The frontend and algorithm packages are coupled for this release. After upgrading, check the Frontend and Body versions in the web interface. Do not treat all four packages as an unconditional installation sequence.
+### 2. Mount, power and connect
 
-## Tools and integration downloads
+Mount the module level on a rigid structure with unobstructed camera and LiDAR views. Connect power and Ethernet, configure the computer on the device's network, then open the device's browser-based platform.
 
-| Resource | Use | Download / guide |
-| --- | --- | --- |
-| LxCameraViewer | Embedded firmware update and device IP configuration | [Windows Installer](https://github.com/Lanxin-MRDVS/CameraSDK/releases/download/SDK-V2.4.60/MRDVS-2.4.60.260126-windows-installer.exe) · [Ubuntu Package](https://github.com/Lanxin-MRDVS/CameraSDK/releases/download/SDK-V2.4.60/LxCameraViewer-ubuntu20-viewer.tar.gz) |
-| ROS 1 SDK | ROS 1 integration | [SDK Package](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2_ROS1.zip) · [Interface](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-ROS1-Interface) |
-| ROS 2 SDK | ROS 2 integration | [SDK Package](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2_ROS2.zip) · [Interface](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-ROS2-Interface) |
-| Positioning QR codes | Optional relocalization assistance; register codes in the current map | [QR Code Templates](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2Pro_QRcode_tags.zip) · [Deployment Guide](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/Relocalization-QR-Code-Deployment) |
+Follow the [Setup & Mapping Guide](Document/First-Time%20Setup%20%26%20Mapping%20Guide.md) for wiring, network configuration and the web interface. Normal configuration and mapping use a web browser.
 
-LxCameraViewer is used for the documented firmware and IP tasks; normal configuration and mapping use the device's browser-based platform.
+<a id="check-versions-and-update-if-needed"></a>
+### 3. Check versions and update if needed
+
+Check **Body**, **Frontend** and embedded firmware versions before selecting a package. Use the downloads in **Release status** with the [Upgrade Guide](Document/Firmware%20Upgrade%20%26%20Device%20IP%20Modification.md).
+
+- **Frontend and Body:** use the matching pair supplied with the release, then verify both versions in the web interface.
+- **Hardware patch:** apply through LxCameraViewer as directed in the guide.
+- **Integrated firmware:** follow the release instructions if the Web Front-End upgrade option is missing.
+
+These are different update paths, not four mandatory installation steps.
+
+**LxCameraViewer**, for the documented firmware and device-IP tasks: [Windows Installer](https://github.com/Lanxin-MRDVS/CameraSDK/releases/download/SDK-V2.4.60/MRDVS-2.4.60.260126-windows-installer.exe) · [Ubuntu Package](https://github.com/Lanxin-MRDVS/CameraSDK/releases/download/SDK-V2.4.60/LxCameraViewer-ubuntu20-viewer.tar.gz).
+
+### 4. Map and validate localization
+
+Create and save a map, initialize the vehicle position and heading, then validate localization along the intended route. Check localization status and timestamps as well as coordinates before using the output in your application.
+
+Continue with the mapping and localization procedures in the [Setup & Mapping Guide](Document/First-Time%20Setup%20%26%20Mapping%20Guide.md). If the site needs QR-assisted relocalization, use the [QR Code Templates](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2Pro_QRcode_tags.zip) and [Deployment Guide](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/Relocalization-QR-Code-Deployment); register the codes in the current map.
+
+<a id="6-documentation"></a>
+<a id="integration"></a>
+<a id="tools-and-integration-downloads"></a>
+### 5. Integrate with your system
+
+Choose the interface used by your controller or application. Confirm pose, heading, localization status and timestamps during integration. The existing Wiki URLs remain unchanged.
+
+| Interface | Reference / SDK |
+| --- | --- |
+| HTTP | [HTTP Communication Protocol](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-HTTP-Communication-Protocol) |
+| MQTT | [MQTT Communication Protocol](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-MQTT-communication-protocal) |
+| UDP | [UDP Communication Protocol](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-UDP-Communication-Protocol) |
+| ROS 1 | [ROS 1 Interface](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-ROS1-Interface) · [SDK Package](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2_ROS1.zip) |
+| ROS 2 | [ROS 2 Interface](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-ROS2-Interface) · [SDK Package](https://github.com/Lanxin-MRDVS/V2Pro-Kit/releases/download/V2-Pro-V1.2.0/V2_ROS2.zip) |
+
+<details>
+<summary><strong>Product reference</strong> · capabilities, applications and operating limits</summary>
+
+<a id="product-reference"></a>
 
 <a id="5-system-highlights"></a>
-## Capabilities
+### Capabilities
 
 | Capability | Application |
 | --- | --- |
@@ -120,14 +135,14 @@ LxCameraViewer is used for the documented firmware and IP tasks; normal configur
 | System integration | Supplies pose, timestamps, localization status, map/device information and task feedback. |
 
 <a id="2-key-applications"></a>
-## Applications
+### Applications
 
 V2 Pro supplies localization for AGVs, AMRs and material-handling vehicles in warehouses, production facilities and intralogistics. Customer systems can use the output for vehicle tracking, route analysis and digital-twin applications. Goods tracking additionally requires item identity and loading or unloading records.
 
 <p align="center"><img src="img/v2pro-applications.jpeg" alt="Warehouse handling, production supply and intralogistics application scenes from the V2 Pro white paper" width="800"></p>
 
 <a id="3-technical-specifications"></a>
-## Key specifications and operating limits
+### Key specifications and operating limits
 
 The following values come from **White Paper V0.1**, and apply when its installation, environmental and map requirements are met. Validate the delivered firmware and actual operating routes for the project.
 
@@ -149,19 +164,7 @@ Keep the camera and LiDAR views clear and mount the module level on a rigid stru
 
 Coordinates alone do not establish valid localization: check localization status and timestamps. The module continues computing onboard, so communication loss and localization failure are different conditions. Full performance definitions and limits are in the [White Paper](Document/V2Pro_Localization_Module_Product_White_Paper_V0.1.pdf).
 
-<a id="6-documentation"></a>
-## Integration
-
-The existing Wiki pages remain the protocol references; their URLs are unchanged.
-
-| Interface / task | Reference |
-| --- | --- |
-| HTTP | [HTTP Communication Protocol](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-HTTP-Communication-Protocol) |
-| MQTT | [MQTT Communication Protocol](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-MQTT-communication-protocal) |
-| UDP | [UDP Communication Protocol](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-UDP-Communication-Protocol) |
-| ROS 1 | [ROS 1 Interface](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-ROS1-Interface) |
-| ROS 2 | [ROS 2 Interface](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/V2-Pro-ROS2-Interface) |
-| QR-assisted relocalization | [QR Code Deployment](https://github.com/Lanxin-MRDVS/V2Pro-Kit/wiki/Relocalization-QR-Code-Deployment) |
+</details>
 
 ## Repository layout
 
